@@ -6,7 +6,6 @@ export const hex2rgba = (hex: string, alpha: number = 1): string => {
   return `rgba(${r},${g},${b},${alpha})`;
 };
 
-export const navDelay = 1000;
 export const loaderDelay = 2000;
 
 export const KEY_CODES = {
