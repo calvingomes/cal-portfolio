@@ -10,8 +10,8 @@ export type SocialMediaItem = {
 
 
 export const socialMedia: { name: IconName; url: string }[] = [
-  { name: "GitHub", url: "" },
-  { name: "Linkedin", url: "" },
+  { name: "GitHub", url: "https://github.com/calvingomes" },
+  { name: "Linkedin", url: "https://www.linkedin.com/in/calvingomes045/" },
 ];
 
 
