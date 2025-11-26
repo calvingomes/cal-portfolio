@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Providers from "./providers";
 import GlobalStyle from "@/styles/GlobalStyle";
 import NavbarWrapper from "@/components/Navbar/NavbarWrapper";
-import Footer from "@/components/Footer/Footer";
+import FooterWrapper from "@/components/Footer/FooterWrapper";
 
 
 import "./globals.css";
@@ -19,15 +19,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`antialiased`}
+        className="antialiased"
+        suppressHydrationWarning
       >
         <Providers>
           <GlobalStyle />
-          <NavbarWrapper  />
+          <NavbarWrapper />
           {children}
-          <Footer />
+          <FooterWrapper />
         </Providers>
       </body>
     </html>

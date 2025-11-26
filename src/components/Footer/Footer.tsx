@@ -16,16 +16,16 @@ const StyledSocialLinks = styled.div`
   display: none;
 
   @media (max-width: 768px) {
-    display: block;
+    display: flex;
+    justify-content: center;
     width: 100%;
-    max-width: 270px;
-    margin: 0 auto 10px;
     color: var(--light-slate);
   }
 
   ul {
     ${({ theme }) => theme.mixins.flexBetween};
     list-style: none;
+    gap: 15px;
     margin: 0;
     padding: 0;
 
@@ -69,7 +69,7 @@ const Footer = () => {
 
       <StyledCredit tabIndex={-1}>
         <a href="">
-          <div>Built with Next.js</div>
+          <div>Designed and Built by Calvin with Next.js</div>
         </a>
       </StyledCredit>
     </StyledFooter>
