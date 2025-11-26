@@ -1,9 +1,6 @@
-import ScrollReveal from "scrollreveal";
+const isServer = typeof window === "undefined";
 
-const isSSR = typeof window === "undefined";
-
-type ScrollRevealInstance = ReturnType<typeof ScrollReveal>;
-
-const sr: ScrollRevealInstance | null = isSSR ? null : ScrollReveal();
+const sr =
+  !isServer ? (await import("scrollreveal")).default() : { reveal: () => { } };
 
 export default sr;
