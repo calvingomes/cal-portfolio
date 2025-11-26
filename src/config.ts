@@ -1,18 +1,21 @@
+import type { IconName } from "@/components/icons";
+
 export const email = "calvingomes045@gmail.com";
 
+// Strictly typed social media items
 export type SocialMediaItem = {
-  name: string;
+  name: IconName;
   url: string;
 };
 
-export const socialMedia: SocialMediaItem[] = [
+
+export const socialMedia: { name: IconName; url: string }[] = [
   { name: "GitHub", url: "" },
-  { name: "Instagram", url: "" },
-  { name: "Twitter", url: "" },
   { name: "Linkedin", url: "" },
-  { name: "Codepen", url: "" },
 ];
 
+
+// Navigation items
 export type NavLink = {
   name: string;
   url: string;
@@ -25,12 +28,14 @@ export const navLinks: NavLink[] = [
   { name: "Contact", url: "/#contact" },
 ];
 
+// Colors (readonly: as const)
 export const colors = {
   green: "#64ffda",
   navy: "#0a192f",
   darkNavy: "#020c1b",
 } as const;
 
+// ScrollReveal settings
 export const srConfig = (delay = 200, viewFactor = 0.25) => ({
   origin: "bottom",
   distance: "20px",

@@ -1,5 +1,7 @@
-export default function Home() {
+export default function HomePage() {
   return (
-    <div>Hello, This is the Page.tsx in app</div>
+    <main id="content">
+      <h1>Hello, This is the Home Page</h1>
+    </main>
   );
 }
