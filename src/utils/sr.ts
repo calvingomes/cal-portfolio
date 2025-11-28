@@ -1,6 +1,14 @@
-const isServer = typeof window === "undefined";
+let srInstance: any = null;
 
-const sr =
-  !isServer ? (await import("scrollreveal")).default() : { reveal: () => { } };
+const loadScrollReveal = async () => {
+  if (typeof window === "undefined") return { reveal: () => {} };
 
-export default sr;
+  if (!srInstance) {
+    const ScrollReveal = (await import("scrollreveal")).default;
+    srInstance = ScrollReveal();
+  }
+
+  return srInstance;
+};
+
+export default loadScrollReveal;

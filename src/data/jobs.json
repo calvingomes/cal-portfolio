@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2017-12-21",
+    "title": "Frontend Developer",
+    "company": "Starling Bank",
+    "location": "London, UK",
+    "range": "2022 — Present",
+    "url": "https://starlingbank.com",
+    "highlights": [
+      "Implemented responsive designs",
+      "Optimized performance for better SEO"
+    ]
+  },
+  {
+    "date": "2017-12-21",
+    "title": "Web Developer",
+    "company": "Sumasearch",
+    "location": "Germany",
+    "range": "2020 — 2022",
+    "url": "https://sumasearch.de",
+    "highlights": [
+      "Implemented responsive designs",
+      "Optimized performance for better SEO"
+    ]
+  }
+]
