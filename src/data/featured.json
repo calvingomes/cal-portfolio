@@ -1,0 +1,38 @@
+[
+  {
+    "date": 1,
+    "title": "Project One",
+    "external": "https://example.com",
+    "github": "https://github.com",
+    "cover": "/images/featured/project-one.png",
+    "tech": [
+      "React",
+      "Styled Components"
+    ],
+    "cta": "https://link.com",
+    "description": "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on [Visual Studio Marketplace]. A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on [Visual Studio Marketplace]"
+  },
+  {
+    "date": 2,
+    "title": "Project two",
+    "external": "https://example.com",
+    "github": "https://github.com",
+    "cover": "/images/featured/project-one.png",
+    "tech": [
+      "React",
+      "Styled Components",
+      "Gatsby",
+      "GraphQL",
+      "Contentful",
+      "Netlify",
+      "React",
+      "Styled Components",
+      "Gatsby",
+      "GraphQL",
+      "Contentful",
+      "Netlify"
+    ],
+    "cta": "https://link.com",
+    "description": "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on [Visual Studio Marketplace]"
+  }
+]
