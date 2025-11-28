@@ -1,0 +1,62 @@
+[
+  {
+    "date": "2017-11-01",
+    "title": "My Project",
+    "tech": ["React", "Next.js"],
+    "github": "https://github.com/project",
+    "external": "https://project.com",
+    "showInProjects": true,
+    "company": "Apple",
+    "description": "Facebook Messenger chat bot extension featuring authentication and full song streaming from within the Messenger app. Read more about it on"
+  },
+  {
+    "date": "2017-11-01",
+    "title": "My Project",
+    "tech": ["React", "Next.js"],
+    "github": "https://github.com/project",
+    "external": "https://project.com",
+    "showInProjects": true,
+    "company": "Apple",
+    "description": "Facebook Messenger chat bot extension featuring authentication and full song streaming from within the Messenger app. Read more about it on"
+  },
+  {
+    "date": "2017-11-01",
+    "title": "My Project",
+    "tech": ["React", "Next.js"],
+    "github": "https://github.com/project",
+    "external": "https://project.com",
+    "showInProjects": true,
+    "company": "Apple",
+    "description": "Facebook Messenger chat bot extension featuring authentication and full song streaming from within the Messenger app. Read more about it on"
+  },
+  {
+    "date": "2017-11-01",
+    "title": "My Project",
+    "tech": ["React", "Next.js"],
+    "github": "https://github.com/project",
+    "external": "https://project.com",
+    "showInProjects": true,
+    "company": "Apple",
+    "description": "Facebook Messenger chat bot extension featuring authentication and full song streaming from within the Messenger app. Read more about it on"
+  },
+  {
+    "date": "2017-11-01",
+    "title": "My Project",
+    "tech": ["React", "Next.js"],
+    "github": "https://github.com/project",
+    "external": "https://project.com",
+    "showInProjects": true,
+    "company": "Apple",
+    "description": "Facebook Messenger chat bot extension featuring authentication and full song streaming from within the Messenger app. Read more about it on"
+  },
+  {
+    "date": "2017-11-01",
+    "title": "My Project",
+    "tech": ["React", "Next.js"],
+    "github": "https://github.com/project",
+    "external": "https://project.com",
+    "showInProjects": true,
+    "company": "Apple",
+    "description": "Facebook Messenger chat bot extension featuring authentication and full song streaming from within the Messenger app. Read more about it on"
+  }
+]
