@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 import Image from "next/image";
 import styled from 'styled-components';
 import { srConfig } from '@/config';
-import sr from '@utils/sr';
+import loadScrollReveal from "@/utils/sr";
 import { usePrefersReducedMotion } from '@/hooks';
 
 const StyledAboutSection = styled.section`
@@ -124,9 +124,11 @@ const About = () => {
   useEffect(() => {
     if (prefersReducedMotion) return;
     if (!revealContainer.current) return;
-    if (!sr) return;
 
-    sr.reveal(revealContainer.current, srConfig());
+    (async () => {
+      const srInstance = await loadScrollReveal();
+      srInstance.reveal(revealContainer.current!, srConfig());
+    })();
   }, [prefersReducedMotion]);
 
   const skills = ['React', 'Vue.js', 'Next.js', 'Astro', 'JavaScript (ES6+)', 'TypeScript', 'Node.js',];
@@ -170,7 +172,7 @@ const About = () => {
               width={300}
               height={300}
               priority
-              style={{objectFit: 'cover', aspectRatio: '1/1'}}
+              style={{ objectFit: 'cover', aspectRatio: '1/1' }}
             />
           </div>
         </StyledPic>
