@@ -6,7 +6,7 @@ import loadScrollReveal from "@/utils/sr";
 import { srConfig } from "@/config";
 import { Icon } from "@/components/icons";
 import { usePrefersReducedMotion } from "@/hooks";
-import featuredData from "@/data/featured.json";
+import featuredData from "@/content/featured.json";
 import Image from "next/image";
 
 

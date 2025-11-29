@@ -37,6 +37,9 @@
       ],
       "@fonts/*": [
         "src/fonts/*"
+      ],
+      "@content/*": [
+        "src/content/*"
       ]
     },
     "plugins": [

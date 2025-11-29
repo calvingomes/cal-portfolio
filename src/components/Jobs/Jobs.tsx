@@ -6,7 +6,7 @@ import { srConfig } from "@/config";
 import { KEY_CODES } from "@/utils";
 import loadScrollReveal from "@/utils/sr";
 import { usePrefersReducedMotion } from "@/hooks";
-import jobsData from "@/data/jobs.json";
+import jobsData from "@/content/jobs.json";
 
 interface TabButtonProps {
   $isActive: boolean;

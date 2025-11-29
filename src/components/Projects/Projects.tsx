@@ -7,7 +7,7 @@ import loadScrollReveal from "@/utils/sr";
 import { srConfig } from "@/config";
 import { Icon } from "@/components/icons";
 import { usePrefersReducedMotion } from "@/hooks";
-import projectsData from "@/data/projects.json";
+import projectsData from "@/content/projects.json";
 
 const StyledProjectsSection = styled.section`
   display: flex;
