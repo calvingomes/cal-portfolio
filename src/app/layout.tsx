@@ -4,7 +4,6 @@ import Providers from "./providers";
 import NavbarWrapper from "@/components/Navbar/NavbarWrapper";
 import FooterWrapper from "@/components/Footer/FooterWrapper";
 
-
 import "./globals.css";
 
 export const metadata: Metadata = {
