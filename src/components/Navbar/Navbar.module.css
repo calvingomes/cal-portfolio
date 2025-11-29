@@ -8,7 +8,7 @@
   padding: 0 50px;
   width: 100%;
   height: var(--nav-height);
-  background-color: rgba(10, 25, 47, 0.85);
+  background-color: var(--charcoal);
   backdrop-filter: blur(10px);
   transition: var(--transition);
   opacity: 1;
@@ -31,14 +31,14 @@
 @media (prefers-reduced-motion: no-preference) {
   .header.scrollUp {
     height: var(--nav-scroll-height);
-    background-color: rgba(10, 25, 47, 0.85);
-    box-shadow: 0 10px 30px -10px var(--navy-shadow);
+    background-color: var(--deep-charcoal);
+    box-shadow: 0 10px 30px -10px var(--shadow);
   }
 
   .header.scrollDown {
     height: var(--nav-scroll-height);
     transform: translateY(calc(var(--nav-scroll-height) * -1));
-    box-shadow: 0 10px 30px -10px var(--navy-shadow);
+    box-shadow: 0 10px 30px -10px var(--shadow);
   }
 }
 
@@ -48,7 +48,7 @@
   justify-content: space-between;
   position: relative;
   width: 100%;
-  color: var(--lightest-slate);
+  color: var(--text-highlight);
   font-family: var(--font-mono);
   z-index: 12;
 }
@@ -60,7 +60,7 @@
 }
 
 .logo a {
-  color: var(--green);
+  color: var(--accent-red);
   width: 42px;
   height: 42px;
   position: relative;
@@ -107,7 +107,7 @@
 .li a {
   display: inline-block;
   padding: 10px;
-  color: var(--lightest-slate);
+  color: var(--text-highlight);
   text-decoration: none;
   transition: var(--transition);
 }
@@ -115,13 +115,13 @@
 .li a::before {
   content: "0" counter(item) ".";
   margin-right: 5px;
-  color: var(--green);
+  color: var(--accent-red);
   font-size: var(--fz-xxs);
 }
 
 .li a:hover,
 .li a:focus {
-  color: var(--green);
+  color: var(--accent-red);
   outline: 0;
 }
 
@@ -132,9 +132,9 @@
   padding: 10px 16px;
   margin-left: 15px;
   background-color: transparent;
-  border: 1px solid var(--green);
+  border: 1px solid var(--accent-red);
   border-radius: var(--border-radius);
-  color: var(--green);
+  color: var(--accent-red);
   text-decoration: none;
   font-size: var(--fz-sm);
   font-family: var(--font-mono);

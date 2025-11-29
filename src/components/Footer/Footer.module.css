@@ -17,7 +17,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    color: var(--light-slate);
+    color: var(--text-primary);
   }
 }
 
@@ -36,13 +36,13 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
-  color: var(--light-slate);
+  color: var(--text-primary);
   transition: var(--transition);
 }
 
 .ul a:hover,
 .ul a:focus {
-  color: var(--green);
+  color: var(--accent-red);
   outline: 0;
   transform: translateY(-3px);
 }
@@ -53,7 +53,7 @@
 }
 
 .credit {
-  color: var(--light-slate);
+  color: var(--text-primary);
   font-family: var(--font-mono);
   font-size: var(--fz-xxs);
   line-height: 1;
@@ -62,13 +62,13 @@
 .credit a {
   display: inline-block;
   padding: 10px;
-  color: var(--light-slate);
+  color: var(--text-primary);
   text-decoration: none;
   transition: var(--transition);
 }
 
 .credit a:hover,
 .credit a:focus {
-  color: var(--green);
+  color: var(--accent-red);
   outline: 0;
 }

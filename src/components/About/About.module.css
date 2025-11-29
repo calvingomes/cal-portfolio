@@ -36,7 +36,7 @@
   content: "▹";
   position: absolute;
   left: 0;
-  color: var(--green);
+  color: var(--accent-red);
   font-size: var(--fz-sm);
   line-height: 12px;
 }
@@ -58,10 +58,10 @@
   display: block;
   position: relative;
   width: 300px;
-  background-color: var(--green);
+  background-color: var(--accent-red);
   border-radius: var(--border-radius);
   transition: var(--transition);
-  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  box-shadow: 0 10px 30px -15px var(--shadow);
 }
 
 .wrapper:hover,
@@ -101,12 +101,12 @@
 .wrapper::before {
   top: 0;
   left: 0;
-  background-color: var(--navy);
+  background-color: var(--charcoal);
   mix-blend-mode: screen;
 }
 
 .wrapper::after {
-  border: 2px solid var(--green);
+  border: 2px solid var(--accent-red);
   top: 14px;
   left: 14px;
   z-index: -1;

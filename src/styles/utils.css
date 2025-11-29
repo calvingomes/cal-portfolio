@@ -21,25 +21,25 @@
 
 .link:hover,
 .link:focus-visible {
-  color: var(--green);
+  color: var(--accent-red);
   outline: 0;
 }
 
 .inline-link {
   display: inline-block;
   position: relative;
-  color: var(--green);
+  color: var(--accent-red);
   transition: var(--transition);
 }
 
 .inline-link:hover,
 .inline-link:focus-visible {
-  color: var(--green);
+  color: var(--accent-red);
   outline: 0;
 }
 
 .inline-link>* {
-  color: var(--green) !important;
+  color: var(--accent-red) !important;
   transition: var(--transition);
 }
 
@@ -50,7 +50,7 @@
   height: 1px;
   position: relative;
   bottom: 0.37em;
-  background-color: var(--green);
+  background-color: var(--accent-red);
   opacity: 0.5;
 }
 
@@ -66,9 +66,9 @@
 }
 
 .btn {
-  color: var(--green);
+  color: var(--accent-red);
   background-color: transparent;
-  border: 1px solid var(--green);
+  border: 1px solid var(--accent-red);
   border-radius: var(--border-radius);
   font-size: var(--fz-xs);
   font-family: var(--font-mono);
@@ -81,7 +81,7 @@
 .btn:hover,
 .btn:focus-visible {
   outline: none;
-  box-shadow: 4px 4px 0 0 var(--green);
+  box-shadow: 4px 4px 0 0 var(--accent-red);
   transform: translate(-5px, -5px);
 }
 
@@ -97,7 +97,7 @@
 
 .btn--sm:hover,
 .btn--sm:focus-visible {
-  box-shadow: 3px 3px 0 0 var(--green);
+  box-shadow: 3px 3px 0 0 var(--accent-red);
   transform: translate(-4px, -4px);
 }
 
@@ -108,18 +108,18 @@
 
 .btn--lg:hover,
 .btn--lg:focus-visible {
-  box-shadow: 4px 4px 0 0 var(--green);
+  box-shadow: 4px 4px 0 0 var(--accent-red);
   transform: translate(-5px, -5px);
 }
 
 .box-shadow {
-  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  box-shadow: 0 10px 30px -15px var(--shadow);
   transition: var(--transition);
 }
 
 .box-shadow:hover,
 .box-shadow:focus-visible {
-  box-shadow: 0 20px 30px -15px var(--navy-shadow);
+  box-shadow: 0 20px 30px -15px var(--shadow);
 }
 
 .fancy-list {
@@ -139,7 +139,7 @@
   content: '▹';
   position: absolute;
   left: 0;
-  color: var(--green);
+  color: var(--accent-red);
 }
 
 .reset-list {

@@ -18,7 +18,7 @@
 
 .heroSection h1 {
   margin: 0 0 30px 4px;
-  color: var(--green);
+  color: var(--accent-red);
   font-family: var(--font-mono);
   font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
   font-weight: 400;
@@ -36,9 +36,9 @@
   padding: 13px 20px;
   margin-top: 50px;
   background-color: transparent;
-  border: 1px solid var(--green);
+  border: 1px solid var(--accent-red);
   border-radius: var(--border-radius);
-  color: var(--green);
+  color: var(--accent-red);
   text-decoration: none;
   font-size: var(--fz-sm);
   font-family: var(--font-mono);

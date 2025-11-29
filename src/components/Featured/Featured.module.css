@@ -19,7 +19,7 @@
 
 @media (max-width: 768px) {
   .project {
-    box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    box-shadow: 0 10px 30px -15px var(--shadow);
   }
 }
 
@@ -138,14 +138,14 @@
 
 .projectOverline {
   margin: 10px 0;
-  color: var(--green);
+  color: var(--accent-red);
   font-family: var(--font-mono);
   font-size: var(--fz-xs);
   font-weight: 400;
 }
 
 .projectTitle {
-  color: var(--lightest-slate);
+  color: var(--text-highlight);
   font-size: clamp(24px, 5vw, 28px);
 }
 
@@ -181,10 +181,10 @@
   z-index: 2;
   padding: 25px;
   border-radius: var(--border-radius);
-  background-color: var(--light-navy);
-  color: var(--light-slate);
+  background-color: var(--dark-grey);
+  color: var(--text-primary);
   font-size: var(--fz-lg);
-  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  box-shadow: 0 10px 30px -15px var(--shadow);
 }
 
 @media (max-width: 768px) {
@@ -196,7 +196,7 @@
 }
 
 .projectDescription a {
-  color: var(--green);
+  color: var(--accent-red);
   position: relative;
 }
 
@@ -212,7 +212,7 @@
 
 .projectTechList li {
   margin: 0 20px 5px 0;
-  color: var(--light-slate);
+  color: var(--text-primary);
   font-family: var(--font-mono);
   font-size: var(--fz-xs);
   white-space: nowrap;
@@ -225,7 +225,7 @@
 
   .projectTechList li {
     margin: 0 10px 5px 0;
-    color: var(--lightest-slate);
+    color: var(--text-highlight);
   }
 }
 
@@ -235,7 +235,7 @@
   position: relative;
   margin-top: 10px;
   margin-left: -10px;
-  color: var(--lightest-slate);
+  color: var(--text-highlight);
 }
 
 .projectLinks a {
@@ -258,22 +258,22 @@
 
 .cta {
   padding: 0.75rem 1rem;
-  border: 1px solid var(--green);
+  border: 1px solid var(--accent-red);
   border-radius: var(--border-radius);
   font-size: var(--fz-xs);
   font-family: var(--font-mono);
-  color: var(--green);
+  color: var(--accent-red);
   background: transparent;
   transition: var(--transition);
 }
 
 .cta:hover {
-  box-shadow: 3px 3px 0 0 var(--green);
+  box-shadow: 3px 3px 0 0 var(--accent-red);
   transform: translate(-4px, -4px);
 }
 
 .projectImage {
-  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  box-shadow: 0 10px 30px -15px var(--shadow);
   grid-column: 6 / -1;
   grid-row: 1 / -1;
   position: relative;
@@ -291,7 +291,7 @@
 .projectImage a {
   width: 100%;
   height: 100%;
-  background-color: var(--green);
+  background-color: var(--accent-red);
   border-radius: var(--border-radius);
   vertical-align: middle;
   position: relative;
@@ -318,7 +318,7 @@
   height: 100%;
   inset: 0;
   z-index: 3;
-  background-color: var(--navy);
+  background-color: var(--charcoal);
   mix-blend-mode: screen;
   transition: var(--transition);
 }

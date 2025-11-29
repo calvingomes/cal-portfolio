@@ -62,8 +62,8 @@
   padding: 2rem 1.75rem;
   border-radius: var(--border-radius);
 
-  background-color: var(--light-navy);
-  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  background-color: var(--dark-grey);
+  box-shadow: 0 10px 30px -15px var(--shadow);
 
   transition: var(--transition);
   overflow: auto;
@@ -77,7 +77,7 @@
 }
 
 .folder {
-  color: var(--green);
+  color: var(--accent-red);
 }
 
 .folder svg {
@@ -89,7 +89,7 @@
   display: flex;
   align-items: center;
   margin-right: -10px;
-  color: var(--light-slate);
+  color: var(--text-primary);
 }
 
 .projectLinks a {
@@ -112,7 +112,7 @@
 
 .projectTitle {
   margin: 0 0 10px;
-  color: var(--lightest-slate);
+  color: var(--text-highlight);
   font-size: var(--fz-xxl);
 }
 
@@ -129,7 +129,7 @@
 }
 
 .projectDescription {
-  color: var(--light-slate);
+  color: var(--text-primary);
   font-size: 17px;
 }
 
@@ -157,8 +157,8 @@
 .moreButton {
   margin: 80px auto 0;
   background: transparent;
-  border: 1px solid var(--green);
-  color: var(--green);
+  border: 1px solid var(--accent-red);
+  color: var(--accent-red);
   padding: 1rem 1.75rem;
   border-radius: var(--border-radius);
   font-size: var(--fz-sm);
@@ -168,6 +168,6 @@
 
 .moreButton:hover,
 .moreButton:focus-visible {
-  box-shadow: 4px 4px 0 0 var(--green);
+  box-shadow: 4px 4px 0 0 var(--accent-red);
   transform: translate(-5px, -5px);
 }

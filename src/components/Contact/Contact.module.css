@@ -13,7 +13,7 @@
 .overline {
   display: block;
   margin-bottom: 20px;
-  color: var(--green);
+  color: var(--accent-red);
   font-family: var(--font-mono);
   font-size: var(--fz-md);
   font-weight: 400;
@@ -35,9 +35,9 @@
 .emailLink {
   margin-top: 50px;
   padding: 1.25rem 1.75rem;
-  border: 1px solid var(--green);
+  border: 1px solid var(--accent-red);
   border-radius: var(--border-radius);
-  color: var(--green);
+  color: var(--accent-red);
   background: transparent;
   font-family: var(--font-mono);
   font-size: var(--fz-sm);
@@ -47,6 +47,6 @@
 
 .emailLink:hover,
 .emailLink:focus-visible {
-  box-shadow: 4px 4px 0 0 var(--green);
+  box-shadow: 4px 4px 0 0 var(--accent-red);
   transform: translate(-5px, -5px);
 }

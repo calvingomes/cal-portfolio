@@ -11,12 +11,12 @@ html {
 }
 
 ::selection {
-  background-color: var(--lightest-navy);
-  color: var(--lightest-slate);
+  background-color: var(--medium-grey);
+  color: var(--text-highlight);
 }
 
 :focus {
-  outline: 2px dashed var(--green);
+  outline: 2px dashed var(--accent-red);
   outline-offset: 3px;
 }
 
@@ -26,14 +26,14 @@ html {
 }
 
 :focus-visible {
-  outline: 2px dashed var(--green);
+  outline: 2px dashed var(--accent-red);
   outline-offset: 3px;
 }
 
 /* Scrollbar Styles */
 html {
   scrollbar-width: thin;
-  scrollbar-color: var(--dark-slate) var(--navy);
+  scrollbar-color: var(--text-subtle) var(--charcoal);
 }
 
 ::-webkit-scrollbar {
@@ -41,12 +41,12 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--navy);
+  background: var(--charcoal);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--dark-slate);
-  border: 3px solid var(--navy);
+  background-color: var(--text-subtle);
+  border: 3px solid var(--charcoal);
   border-radius: 10px;
 }
 
@@ -57,8 +57,8 @@ body {
   overflow-x: hidden;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--navy);
-  color: var(--slate);
+  background-color: var(--charcoal);
+  color: var(--text-secondary);
   font-family: var(--font-sans);
   font-size: var(--fz-xl);
   line-height: 1.3;
@@ -170,7 +170,7 @@ h5,
 h6 {
   margin: 0 0 10px 0;
   font-weight: 600;
-  color: var(--lightest-slate);
+  color: var(--text-highlight);
   line-height: 1.1;
 }
 
@@ -200,7 +200,7 @@ h6 {
   counter-increment: section;
   content: '0' counter(section) '.';
   margin-right: 10px;
-  color: var(--green);
+  color: var(--accent-red);
   font-family: var(--font-mono);
   font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
   font-weight: 400;
@@ -214,7 +214,7 @@ h6 {
   width: 300px;
   height: 1px;
   margin-left: 20px;
-  background-color: var(--lightest-navy);
+  background-color: var(--medium-grey);
 }
 
 @media (max-width: 1080px) {
@@ -269,7 +269,7 @@ a {
 
 a:hover,
 a:focus {
-  color: var(--green);
+  color: var(--accent-red);
 }
 
 button {
@@ -301,7 +301,7 @@ p:last-of-type {
 }
 
 p>code {
-  background-color: var(--light-navy);
+  background-color: var(--dark-grey);
   color: var(--white);
   font-size: var(--fz-sm);
   border-radius: var(--border-radius);
@@ -325,11 +325,11 @@ ul.fancy-list li:before {
   content: '▹';
   position: absolute;
   left: 0;
-  color: var(--green);
+  color: var(--accent-red);
 }
 
 blockquote {
-  border-left-color: var(--green);
+  border-left-color: var(--accent-red);
   border-left-style: solid;
   border-left-width: 1px;
   margin-left: 0;
@@ -343,7 +343,7 @@ blockquote p {
 }
 
 hr {
-  background-color: var(--lightest-navy);
+  background-color: var(--medium-grey);
   height: 1px;
   border-width: 0;
   margin: 1rem;
@@ -366,8 +366,8 @@ code {
 
 .skip-to-content:hover,
 .skip-to-content:focus {
-  background-color: var(--green);
-  color: var(--navy);
+  background-color: var(--accent-red);
+  color: var(--charcoal);
   top: 0;
   left: 0;
   width: auto;
@@ -379,18 +379,18 @@ code {
 }
 
 #logo {
-  color: var(--green);
+  color: var(--accent-red);
 }
 
 .overline {
-  color: var(--green);
+  color: var(--accent-red);
   font-family: var(--font-mono);
   font-size: var(--fz-md);
   font-weight: 400;
 }
 
 .subtitle {
-  color: var(--green);
+  color: var(--accent-red);
   margin: 0 0 20px 0;
   font-size: var(--fz-md);
   font-family: var(--font-mono);
@@ -418,7 +418,7 @@ code {
   display: flex;
   align-items: center;
   margin-bottom: 50px;
-  color: var(--green);
+  color: var(--accent-red);
 }
 
 .breadcrumb .arrow {
