@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import NavbarWrapper from "@/components/Navbar/NavbarWrapper";
 import FooterWrapper from "@/components/Footer/FooterWrapper";
 
-import "./globals.css";
+import "./global.css";
 
 export const metadata: Metadata = {
   title: "Calvin Gomes",
