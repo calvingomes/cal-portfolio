@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 
 import Providers from "./providers";
-import GlobalStyle from "@/styles/GlobalStyle";
 import NavbarWrapper from "@/components/Navbar/NavbarWrapper";
 import FooterWrapper from "@/components/Footer/FooterWrapper";
 
@@ -24,12 +23,11 @@ export default function RootLayout({
         className="antialiased"
         suppressHydrationWarning
       >
-        <Providers>
-          <GlobalStyle />
-          <NavbarWrapper />
-          {children}
-          <FooterWrapper />
-        </Providers>
+          <Providers>
+            <NavbarWrapper />
+            {children}
+            <FooterWrapper />
+          </Providers>
       </body>
     </html>
   );
