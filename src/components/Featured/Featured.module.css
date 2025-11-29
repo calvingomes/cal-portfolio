@@ -1,6 +1,3 @@
-/* ============================
-   PROJECTS GRID RESET
-============================ */
 .projectsGrid {
   padding: 0;
   margin: 0;
@@ -12,9 +9,6 @@
   z-index: 1;
 }
 
-/* ============================
-   PROJECT ITEM WRAPPER
-============================ */
 .project {
   position: relative;
   display: grid;
@@ -45,9 +39,6 @@
   }
 }
 
-/* ============================
-   ODD ITEM MIRRORING
-============================ */
 .project:nth-of-type(odd) .projectContent {
   grid-column: 7 / -1;
   text-align: right;
@@ -73,7 +64,6 @@
   }
 }
 
-/* reverse tech list */
 .project:nth-of-type(odd) .projectTechList {
   justify-content: flex-end;
 }
@@ -92,7 +82,6 @@
   margin: 0 0 5px 20px;
 }
 
-/* reverse links */
 .project:nth-of-type(odd) .projectLinks {
   justify-content: flex-end;
   margin-left: 0;
@@ -107,7 +96,6 @@
   }
 }
 
-/* reverse image placement */
 .project:nth-of-type(odd) .projectImage {
   grid-column: 1 / 8;
 }
@@ -118,9 +106,6 @@
   }
 }
 
-/* ============================
-   CONTENT AREA
-============================ */
 .projectContent {
   position: relative;
   grid-column: 1 / 7;
@@ -151,9 +136,6 @@
   }
 }
 
-/* ============================
-   OVERLINE
-============================ */
 .projectOverline {
   margin: 10px 0;
   color: var(--green);
@@ -162,9 +144,6 @@
   font-weight: 400;
 }
 
-/* ============================
-   TITLE
-============================ */
 .projectTitle {
   color: var(--lightest-slate);
   font-size: clamp(24px, 5vw, 28px);
@@ -197,9 +176,6 @@
   }
 }
 
-/* ============================
-   DESCRIPTION
-============================ */
 .projectDescription {
   position: relative;
   z-index: 2;
@@ -224,9 +200,6 @@
   position: relative;
 }
 
-/* ============================
-   TECH LIST
-============================ */
 .projectTechList {
   display: flex;
   flex-wrap: wrap;
@@ -256,9 +229,6 @@
   }
 }
 
-/* ============================
-   LINKS
-============================ */
 .projectLinks {
   display: flex;
   align-items: center;
@@ -302,9 +272,6 @@
   transform: translate(-4px, -4px);
 }
 
-/* ============================
-   IMAGE AREA
-============================ */
 .projectImage {
   box-shadow: 0 10px 30px -15px var(--navy-shadow);
   grid-column: 6 / -1;
