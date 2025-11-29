@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 
-import Providers from "./providers";
 import NavbarWrapper from "@/components/Navbar/NavbarWrapper";
 import FooterWrapper from "@/components/Footer/FooterWrapper";
 
@@ -18,15 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className="antialiased"
-        suppressHydrationWarning
-      >
-          <Providers>
-            <NavbarWrapper />
-            {children}
-            <FooterWrapper />
-          </Providers>
+      <body className="antialiased" suppressHydrationWarning>
+        <NavbarWrapper />
+        {children}
+        <FooterWrapper />
       </body>
     </html>
   );
