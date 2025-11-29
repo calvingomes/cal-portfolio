@@ -1,176 +1,12 @@
 "use client";
 
 import { useState, useEffect, useRef, KeyboardEvent } from "react";
-import styled from "styled-components";
+import styles from "./Jobs.module.css";
 import { srConfig } from "@/config";
 import { KEY_CODES } from "@/utils";
 import loadScrollReveal from "@/utils/sr";
 import { usePrefersReducedMotion } from "@/hooks";
 import jobsData from "@/content/jobs.json";
-
-interface TabButtonProps {
-  $isActive: boolean;
-}
-
-interface HighlightProps {
-  $activeTabId: number;
-}
-
-const StyledJobsSection = styled.section`
-  max-width: 700px;
-
-  .inner {
-    display: flex;
-
-    @media (max-width: 600px) {
-      display: block;
-    }
-
-    @media (min-width: 700px) {
-      min-height: 340px;
-    }
-  }
-`;
-
-const StyledTabList = styled.div`
-  position: relative;
-  z-index: 3;
-  width: max-content;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-
-  @media (max-width: 600px) {
-    display: flex;
-    overflow-x: auto;
-    width: calc(100% + 100px);
-    padding-left: 50px;
-    margin-left: -50px;
-    margin-bottom: 30px;
-  }
-  @media (max-width: 480px) {
-    width: calc(100% + 50px);
-    padding-left: 25px;
-    margin-left: -25px;
-  }
-
-  li {
-    &:first-of-type {
-      @media (max-width: 600px) {
-        margin-left: 50px;
-      }
-      @media (max-width: 480px) {
-        margin-left: 25px;
-      }
-    }
-    &:last-of-type {
-      @media (max-width: 600px) {
-        padding-right: 50px;
-      }
-      @media (max-width: 480px) {
-        padding-right: 25px;
-      }
-    }
-  }
-`;
-
-const StyledTabButton = styled.button<TabButtonProps>`
-  ${({ theme }) => theme.mixins.link};
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: var(--tab-height);
-  padding: 0 20px 2px;
-  border-left: 2px solid var(--lightest-navy);
-  background-color: transparent;
-  color: ${({ $isActive }) => ($isActive ? "var(--green)" : "var(--slate)")};
-  font-family: var(--font-mono);
-  font-size: var(--fz-xs);
-  text-align: left;
-  white-space: nowrap;
-
-  @media (max-width: 768px) {
-    padding: 0 15px 2px;
-  }
-  @media (max-width: 600px) {
-    ${({ theme }) => theme.mixins.flexCenter};
-    min-width: 120px;
-    padding: 0 15px;
-    border-left: 0;
-    border-bottom: 2px solid var(--lightest-navy);
-    text-align: center;
-  }
-
-  &:hover,
-  &:focus {
-    background-color: var(--light-navy);
-  }
-`;
-
-const StyledHighlight = styled.div<HighlightProps>`
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  width: 2px;
-  height: var(--tab-height);
-  border-radius: var(--border-radius);
-  background: var(--green);
-  transform: translateY(calc(${({ $activeTabId }) => $activeTabId} * var(--tab-height)));
-  transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition-delay: 0.1s;
-
-  @media (max-width: 600px) {
-    top: auto;
-    bottom: 0;
-    width: 100%;
-    max-width: var(--tab-width);
-    height: 2px;
-    margin-left: 50px;
-    transform: translateX(calc(${({ $activeTabId }) => $activeTabId} * var(--tab-width)));
-  }
-  @media (max-width: 480px) {
-    margin-left: 25px;
-  }
-`;
-
-const StyledTabPanels = styled.div`
-  position: relative;
-  width: 100%;
-  margin-left: 20px;
-
-  @media (max-width: 600px) {
-    margin-left: 0;
-  }
-`;
-
-const StyledTabPanel = styled.div`
-  width: 100%;
-  height: auto;
-  padding: 10px 5px;
-
-  ul {
-    ${({ theme }) => theme.mixins.fancyList};
-  }
-
-  h3 {
-    margin-bottom: 2px;
-    font-size: var(--fz-xxl);
-    font-weight: 500;
-    line-height: 1.3;
-
-    .company {
-      color: var(--green);
-    }
-  }
-
-  .range {
-    margin-bottom: 25px;
-    color: var(--light-slate);
-    font-family: var(--font-mono);
-    font-size: var(--fz-xs);
-  }
-`;
 
 const Jobs = () => {
   const [activeTabId, setActiveTabId] = useState(0);
@@ -190,10 +26,9 @@ const Jobs = () => {
     })();
   }, [prefersReducedMotion]);
 
-  /* Keyboard Focus */
+  /* Keyboard focus movement */
   useEffect(() => {
     if (tabFocus === null) return;
-
     const tab = tabs.current[tabFocus];
     if (tab) tab.focus();
   }, [tabFocus]);
@@ -204,7 +39,6 @@ const Jobs = () => {
         e.preventDefault();
         setTabFocus((prev) => (prev ?? 0) - 1);
         break;
-
       case KEY_CODES.ARROW_DOWN:
         e.preventDefault();
         setTabFocus((prev) => (prev ?? 0) + 1);
@@ -213,15 +47,22 @@ const Jobs = () => {
   };
 
   return (
-    <StyledJobsSection id="jobs" ref={revealContainer}>
+    <section id="jobs" className={styles.jobsSection} ref={revealContainer}>
       <h2 className="numbered-heading">Where I’ve Worked</h2>
 
-      <div className="inner">
-        <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={onKeyDown}>
+      <div className={styles.inner}>
+        {/* Tabs */}
+        <div
+          className={styles.tabList}
+          role="tablist"
+          aria-label="Job tabs"
+          onKeyDown={onKeyDown}
+        >
           {jobsData.map((job, i) => (
-            <StyledTabButton
+            <button
               key={i}
-              $isActive={activeTabId === i}
+              className={`${styles.tabButton} ${activeTabId === i ? styles.activeTab : ""
+                }`}
               onClick={() => setActiveTabId(i)}
               ref={(el) => {
                 tabs.current[i] = el!;
@@ -233,45 +74,52 @@ const Jobs = () => {
               aria-controls={`panel-${i}`}
             >
               <span>{job.company}</span>
-            </StyledTabButton>
+            </button>
           ))}
 
-          <StyledHighlight $activeTabId={activeTabId} />
-        </StyledTabList>
+          {/* Moving highlight indicator */}
+          <span
+            className={styles.highlight}
+            style={{ "--activeId": activeTabId } as React.CSSProperties}
+          />
+        </div>
 
-        <StyledTabPanels>
-          {jobsData.map((job, i) =>
-            activeTabId === i ? (
-              <StyledTabPanel
-                key={i}
-                id={`panel-${i}`}
-                role="tabpanel"
-                tabIndex={0}
-                aria-labelledby={`tab-${i}`}
-              >
-                <h3>
-                  <span>{job.title}</span>
-                  <span className="company">
-                    &nbsp;@&nbsp;
-                    <a href={job.url} className="inline-link">
-                      {job.company}
-                    </a>
-                  </span>
-                </h3>
+        {/* Panels */}
+        <div className={styles.tabPanels}>
+          {jobsData.map(
+            (job, i) =>
+              activeTabId === i && (
+                <div
+                  key={i}
+                  className={styles.tabPanel}
+                  id={`panel-${i}`}
+                  role="tabpanel"
+                  tabIndex={0}
+                  aria-labelledby={`tab-${i}`}
+                >
+                  <h3>
+                    <span>{job.title}</span>
+                    <span className={styles.company}>
+                      &nbsp;@&nbsp;
+                      <a href={job.url} className="inline-link">
+                        {job.company}
+                      </a>
+                    </span>
+                  </h3>
 
-                <p className="range">{job.range}</p>
+                  <p className={styles.range}>{job.range}</p>
 
-                <ul>
-                  {job.highlights.map((item, idx) => (
-                    <li key={idx}>{item}</li>
-                  ))}
-                </ul>
-              </StyledTabPanel>
-            ) : null
+                  <ul className={styles.fancyList}>
+                    {job.highlights.map((item, idx) => (
+                      <li key={idx}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              )
           )}
-        </StyledTabPanels>
+        </div>
       </div>
-    </StyledJobsSection>
+    </section>
   );
 };
 
