@@ -1,17 +1,15 @@
-import mixins from './mixins';
+export const breakpoints = {
+  mobileS: 330,
+  mobileM: 400,
+  mobileL: 480,
+  tabletS: 600,
+  tabletL: 768,
+  desktopXS: 900,
+  desktopS: 1080,
+  desktopM: 1200,
+  desktopL: 1400,
+};
 
 export const theme = {
-  bp: {
-    mobileS: `max-width: 330px`,
-    mobileM: `max-width: 400px`,
-    mobileL: `max-width: 480px`,
-    tabletS: `max-width: 600px`,
-    tabletL: `max-width: 768px`,
-    desktopXS: `max-width: 900px`,
-    desktopS: `max-width: 1080px`,
-    desktopM: `max-width: 1200px`,
-    desktopL: `max-width: 1400px`,
-  },
-
-  mixins,
+  bp: breakpoints,
 };
