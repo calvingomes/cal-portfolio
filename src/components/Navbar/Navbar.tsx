@@ -69,17 +69,6 @@ const StyledNav = styled.nav`
       position: relative;
       z-index: 1;
 
-      .hex-container {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-
-        @media (prefers-reduced-motion: no-preference) {
-          transition: var(--transition);
-        }
-      }
-
       &:hover,
       &:focus {
         outline: 0;
