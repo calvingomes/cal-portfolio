@@ -4,7 +4,6 @@ export default function ArchivePage() {
   return (
     <main id="content">
       <Archive />
-      Hello
     </main>
   );
 }
