@@ -14,7 +14,7 @@ const Hero = () => {
 
   if (!mounted) return <section className={styles.heroSection} />;
 
-  const one = <h1 key="1">{`Hey there, I'm`}</h1>;
+  const one = <h1 key="1">{`Hi, I'm`}</h1>;
   const two = (
     <h2 key="2" className="big-heading">
       Calvin Gomes.
@@ -22,15 +22,15 @@ const Hero = () => {
   );
   const three = (
     <h3 key="3" className="medium-heading">
-      I build great experiences for the web.
+      I build great things for the web.
     </h3>
   );
   const four = (
     <p key="4">
-      I love building fast, reliable, and accessible stuff for the web.
-      I focus on making sure complex ideas turn into smooth, user-friendly
-      digital experiences. Currently, {`I'm`} contributing to projects with the
-      excellent team at{" "}
+      I build fast, reliable, and accessible solutions. 
+      I focus on making sure complex ideas turn into smooth, 
+      user-friendly digital products. Currently, {`I'm`} contributing to 
+      projects with the excellent team at{" "}
       <a href="https://bolser.co.uk/" target="_blank" rel="noreferrer">
         Bolser Digital Agency
       </a>
@@ -51,7 +51,7 @@ const Hero = () => {
   const items = [one, two, three, four, five];
 
   return (
-    <section className={styles.heroSection}>
+    <section id="home" className={styles.heroSection}>
       {prefersReducedMotion
         ? items
         : items.map((item, i) => (
