@@ -13,8 +13,6 @@
   }
 }
 
-.text {}
-
 .skillsList {
   display: grid;
   grid-template-columns: repeat(2, minmax(140px, 200px));
@@ -79,6 +77,7 @@
   mix-blend-mode: multiply;
   filter: grayscale(100%) contrast(1);
   transition: var(--transition);
+  object-fit: cover;
 }
 
 .wrapper:hover .img,
