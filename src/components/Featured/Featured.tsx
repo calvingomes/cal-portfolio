@@ -6,6 +6,7 @@ import { srConfig } from "@/config";
 import { Icon } from "@/components/icons";
 import { usePrefersReducedMotion } from "@/hooks";
 import featuredData from "@/content/featured.json";
+import Projects from "../Projects/Projects";
 import Image from "next/image";
 import styles from "./Featured.module.css";
 
@@ -103,6 +104,7 @@ const Featured = () => {
             </li>
           ))}
       </ul>
+      <Projects />
     </section>
   );
 };
