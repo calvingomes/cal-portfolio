@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 
-import NavbarWrapper from "@/components/Navbar/NavbarWrapper";
-import FooterWrapper from "@/components/Footer/FooterWrapper";
+import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
+// import NavbarWrapper from "@/components/Navbar/NavbarWrapper";
+// import FooterWrapper from "@/components/Footer/FooterWrapper";
 
 import "./global.css";
 
@@ -18,9 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="antialiased" suppressHydrationWarning>
-        <NavbarWrapper />
+        <Navbar />
         {children}
-        <FooterWrapper />
+        <Footer />
       </body>
     </html>
   );
