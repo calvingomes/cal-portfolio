@@ -4,24 +4,27 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "./Navbar.module.css";
 import { navLinks } from "@/config";
-import { useScrollDirection } from "@/hooks";
+import { useScrollDirection, useActiveSection } from "@/hooks";
 import Menu from "@components/Menu/Menu";
 
 const Navbar = () => {
   const scrollDirection = useScrollDirection() ?? "up";
   const [scrolledToTop, setScrolledToTop] = useState(true);
 
+  const getSectionId = (url: string) => url.split("#")[1] ?? "";
+  const sectionIds = ['home', 'about', 'jobs', 'projects', 'contact'];
+  const activeSection = useActiveSection(sectionIds);
+
   useEffect(() => {
     const onScroll = () => {
-      setScrolledToTop(window.pageYOffset < 50);
+      setScrolledToTop(window.pageYOffset < 70);
     };
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const headerClass = `${styles.header} ${
-    scrollDirection === "up" && !scrolledToTop ? styles.scrollUp : ""
-  } ${scrollDirection === "down" && !scrolledToTop ? styles.scrollDown : ""}`;
+  const headerClass = `${styles.header} ${scrollDirection === "up" && !scrolledToTop ? styles.scrollUp : ""
+    } ${scrollDirection === "down" && !scrolledToTop ? styles.scrollDown : ""}`;
 
   return (
     <header className={headerClass}>
@@ -34,11 +37,21 @@ const Navbar = () => {
 
         <div className={styles.links}>
           <ol className={styles.ol}>
-            {navLinks.map(({ url, name }, i) => (
-              <li key={i} className={styles.li}>
-                <Link href={url}>{name}</Link>
-              </li>
-            ))}
+            {navLinks.map(({ url, name }, i) => {
+              const sectionId = getSectionId(url);
+              const isActive = activeSection === sectionId;
+
+              return (
+                <li key={i} className={styles.li}>
+                  <Link
+                    href={url}
+                    className={isActive ? styles.activeLink : ''}
+                  >
+                    {name}
+                  </Link>
+                </li>
+              )
+            })}
           </ol>
 
           <a
