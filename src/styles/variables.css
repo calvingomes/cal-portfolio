@@ -10,60 +10,14 @@
 
   --text-subtle: #666666;
   --text-secondary: #A0A0A0;
-  --text-primary: #D6D6D6;
+  --text-primary: #CACACA;
   --text-highlight: #F7F7F7;
   --white: #FFFFFF;
-
+  
   --accent-red: #E55C50;
   --accent-red-tint: rgba(229, 92, 80, 0.15);
-  --accent-light-red: #F07A70;
   --accent-bright-red: #FF8C8C;
-
-
-
-
-
-  /* Sand and sunset */
-
-  /* --deep-charcoal: #171413;
-  --charcoal: #1F1B1A;
-  --dark-grey: #2A2625;
-  --medium-grey: #363230;
-  --shadow: rgba(23, 20, 19, 0.8);
-
-  --text-subtle: #7C736F;
-  --text-secondary: #B5ADA9;
-  --text-primary: #E6E2DF;
-  --text-highlight: #FAF8F7;
-  --white: #FFFFFF;
-
-  --accent-red: #C47C5E;                   
-  --accent-red-tint: rgba(196, 124, 94, 0.15);
-  --accent-light-red: #D49374;
-  --accent-bright-red: #E7AA8F; */
-
-
-
-
-  /* Galaxy and violet */
-
-  /* --deep-charcoal: #120F11;
-  --charcoal: #1A1619;
-  --dark-grey: #251F23;
-  --medium-grey: #312A2F;
-  --shadow: rgba(18, 15, 17, 0.8);
-
-  --text-subtle: #8F7E8C;
-  --text-secondary: #C9B7C6;
-  --text-primary: #EEE3EC;
-  --text-highlight: #FBF6FA;
-  --white: #FFFFFF;
-
-  --accent-red: #BD8AE6;
-  --accent-red-tint: rgba(189, 138, 230, 0.15);
-  --accent-light-red: #D8A8F4;
-  --accent-bright-red: #EDD0FF; */
-
+  /* --text-primary: #D6D6D6; */
 
 
 
@@ -106,7 +60,7 @@
   --fz-heading: 32px;
 
   --border-radius: 4px;
-  --nav-height: 100px;
+  --nav-height: 90px;
   --nav-scroll-height: 70px;
 
   --tab-height: 42px;
