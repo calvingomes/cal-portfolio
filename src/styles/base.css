@@ -101,46 +101,12 @@ main {
   width: 100%;
   max-width: 1600px;
   min-height: 100vh;
-  padding: 200px 150px;
-}
-
-@media (max-width: 1080px) {
-  main {
-    padding: 200px 100px;
-  }
-}
-
-@media (max-width: 768px) {
-  main {
-    padding: 150px 50px;
-  }
+  padding: 100px 50px 0 50px;
 }
 
 @media (max-width: 480px) {
   main {
-    padding: 125px 25px;
-  }
-}
-
-main.fillHeight {
-  padding: 0 150px;
-}
-
-@media (max-width: 1080px) {
-  main.fillHeight {
-    padding: 0 100px;
-  }
-}
-
-@media (max-width: 768px) {
-  main.fillHeight {
-    padding: 0 50px;
-  }
-}
-
-@media (max-width: 480px) {
-  main.fillHeight {
-    padding: 0 25px;
+    padding: 100px 25px 0 25px;
   }
 }
 
@@ -308,26 +274,6 @@ p>code {
   padding: 0.3em 0.5em;
 }
 
-ul.fancy-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  font-size: var(--fz-lg);
-}
-
-ul.fancy-list li {
-  position: relative;
-  padding-left: 30px;
-  margin-bottom: 10px;
-}
-
-ul.fancy-list li:before {
-  content: '▹';
-  position: absolute;
-  left: 0;
-  color: var(--accent-red);
-}
-
 blockquote {
   border-left-color: var(--accent-red);
   border-left-style: solid;
@@ -352,30 +298,6 @@ hr {
 code {
   font-family: var(--font-mono);
   font-size: var(--fz-md);
-}
-
-.skip-to-content {
-  position: absolute;
-  top: auto;
-  left: -999px;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  z-index: -99;
-}
-
-.skip-to-content:hover,
-.skip-to-content:focus {
-  background-color: var(--accent-red);
-  color: var(--charcoal);
-  top: 0;
-  left: 0;
-  width: auto;
-  height: auto;
-  overflow: auto;
-  z-index: 99;
-  box-shadow: none;
-  transform: none;
 }
 
 #logo {
@@ -412,26 +334,4 @@ code {
 
 .subtitle a {
   line-height: 1.5;
-}
-
-.breadcrumb {
-  display: flex;
-  align-items: center;
-  margin-bottom: 50px;
-  color: var(--accent-red);
-}
-
-.breadcrumb .arrow {
-  display: block;
-  margin-right: 10px;
-  padding-top: 4px;
-}
-
-.breadcrumb a {
-  font-family: var(--font-mono);
-  font-size: var(--fz-sm);
-  font-weight: 600;
-  line-height: 1.5;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
 }

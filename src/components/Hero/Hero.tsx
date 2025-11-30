@@ -21,7 +21,7 @@ const Hero = () => {
     </h2>
   );
   const three = (
-    <h3 key="3" className="big-heading">
+    <h3 key="3" className="medium-heading">
       I build great experiences for the web.
     </h3>
   );
