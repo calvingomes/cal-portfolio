@@ -12,7 +12,7 @@
 (max-width: 360px) {
   .heroSection {
     height: auto;
-    padding-top: var(--nav-height);
+    padding-top: calc(var(--nav-height) - 20px);
   }
 }
 

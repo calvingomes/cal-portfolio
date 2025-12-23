@@ -23,12 +23,15 @@ const About = () => {
 
   const skills = [
     "React",
-    "Vue.js",
     "Next.js",
+    "Vue.js",
     "Astro",
-    "JavaScript (ES6+)",
     "TypeScript",
-    "Node.js",
+    "JavaScript (ES6+)",
+    "GraphQL",
+    "Strapi",
+    "Contentful",
+    "Wordpress",
   ];
 
   return (
@@ -38,16 +41,28 @@ const About = () => {
       <div className={styles.inner}>
         <div className={styles.text}>
           <p>
-            Hello! My name is Calvin blah blah about HTML &amp; CSS!
+            Hi! I’m Calvin, and my passion lies in engineering
+            high-performance, scalable web solutions.
+            As a frontend specialist with over six years
+            of experience, I thrive on crafting component-driven
+            architectures for diverse platforms.
           </p>
 
           <p>
-            Fast-forward to today, and I’ve had the privilege of working at{" "}
-            <a href="">an advertising agency</a>, <a href="">a start-up</a>,{" "}
-            <a href="">a huge corporation</a>, and{" "}
-            <a href="">a student-led design studio</a>. My main focus these days
-            is building accessible, inclusive products and digital experiences
-            at <a href="">Upstatement</a> for a variety of clients.
+            My technical journey began in 2017 as a freelancer,
+            where I first learned to develop SEO-friendly,
+            mobile-first websites. That foundational experience 
+            led to product engineering roles at <a href="https://codingmart.com/" target="_blank" rel="noreferrer">a Product-Centric consulting firm</a>, 
+            {' '}<a href="https://www.uenergysolar.co.uk/" target="_blank" rel="noreferrer">a Renewable Energy company</a>, 
+            and currently, I contribute to the
+            {' '}<a href="https://bolser.co.uk/" target="_blank" rel="noreferrer">Full-Service Digital Agency</a>
+            {' '}team in Leeds.
+          </p>
+
+          <p>
+            I specialize in modern UI engineering, taking abstract
+            concepts and realizing them as reliable, seamless
+            user experiences across high-traffic environments.
           </p>
 
           <p>Here are a few technologies I’ve been working with recently:</p>

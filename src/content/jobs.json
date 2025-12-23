@@ -1,26 +1,49 @@
 [
   {
-    "date": "2017-12-21",
-    "title": "Frontend Developer",
-    "company": "Starling Bank",
-    "location": "London, UK",
-    "range": "2022 — Present",
-    "url": "https://starlingbank.com",
+    "title": "Frontend Web Developer",
+    "company": "Bolser Digital Agency",
+    "location": "Leeds, UK",
+    "range": "Jul 2024 — Present",
+    "url": "https://bolser.co.uk/",
     "highlights": [
-      "Implemented responsive designs",
-      "Optimized performance for better SEO"
+      "Engineered 40+ reusable components for multi-CMS platforms (Strapi, Drupal), significantly improving development speed and UI consistency.",
+      "Achieved 67% performance optimization for Garolla by refining state management and optimizing GraphQL data fetching.",
+      "Led the Astro migration for the RAF Museum site, reducing page load times by 30–40% and minimizing unnecessary JavaScript.",
+      "Revamped UI/UX for Football Foundation and Premier League, reducing click depth by 25% and accelerating key task completion."
     ]
   },
   {
-    "date": "2017-12-21",
+    "title": "UI/UX Engineer, Frontend Web Developer",
+    "company": "U Energy",
+    "location": "Huddersfield, UK",
+    "range": "Jan 2024 — Jun 2024",
+    "url": "https://www.uenergysolar.co.uk/",
+    "highlights": [
+      "Led 3-member frontend team to develop a real-time energy management dashboard, boosting delivery efficiency by 45% with structured architecture.",
+      "Introduced Figma workflows and standardized React/Redux practices, streamlining design-to-development handoffs and reducing UI inconsistencies.",
+      "Integrated Node.js and MongoDB to support the frontend, resulting in improved high-frequency data flow and system responsiveness."
+    ]
+  },
+  {
+    "title": "Product Engineer, Frontend Developer",
+    "company": "Codingmart Technologies",
+    "location": "Bangalore, India",
+    "range": "Dec 2019 — Aug 2022",
+    "url": "https://codingmart.com/",
+    "highlights": [
+      "Spearheaded the rapid delivery of a high-pressure client project, achieving a 95% client satisfaction rating in just two months.",
+      "Boosted user engagement and application performance by 30–40% for major clients (e.g., Decathlon) through targeted UI/performance optimizations.",
+      "Engineered critical features for OkCredit’s high-volume money transfer app, maintaining a 94% error-free release rate across scalable systems."
+    ]
+  },
+  {
     "title": "Web Developer",
-    "company": "Sumasearch",
-    "location": "Germany",
-    "range": "2020 — 2022",
+    "company": "Freelance",
+    "location": "Chennai, India",
+    "range": "May 2017 — Nov 2019",
     "url": "https://sumasearch.de",
     "highlights": [
-      "Implemented responsive designs",
-      "Optimized performance for better SEO"
+      "Engineered and launched 15+ SEO-friendly, mobile-first websites for small businesses, increasing load speeds by 20–30%."
     ]
   }
 ]
