@@ -115,7 +115,6 @@
 }
 
 .li a:hover,
-.li a:focus,
 .li .activeLink {
   color: var(--accent-red);
   outline: 0;

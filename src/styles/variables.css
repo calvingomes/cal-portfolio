@@ -1,54 +1,24 @@
 :root {
-
-  /* charcoal and coral */
-
   --deep-charcoal: #141414;
-  --charcoal: #1A1A1A;
+  --charcoal: #1a1a1a;
   --dark-grey: #282828;
   --medium-grey: #383838;
   --shadow: rgba(20, 20, 20, 0.8);
 
   --text-subtle: #666666;
-  --text-secondary: #A0A0A0;
-  --text-primary: #CACACA;
-  --text-highlight: #F7F7F7;
-  --white: #FFFFFF;
-  
-  --accent-red: #E55C50;
+  --text-secondary: #a0a0a0;
+  --text-primary: #cacaca;
+  --text-highlight: #f7f7f7;
+  --white: #ffffff;
+
+  --accent-red: #e55c50;
   --accent-red-tint: rgba(229, 92, 80, 0.15);
-  --accent-bright-red: #FF8C8C;
+  --accent-bright-red: #ff8c8c;
   /* --text-primary: #D6D6D6; */
 
-
-
-
-  /* Charcoal and cotton candy */
-
-  /* --deep-charcoal: #0F1015;
-  --charcoal: #17181F;
-  --dark-grey: #22232C;
-  --medium-grey: #2E2F39;
-  --shadow: rgba(15, 16, 21, 0.8);
-
-  --text-subtle: #9CA1B2;
-  --text-secondary: #C9CCDA;
-  --text-primary: #ECEEF6;
-  --text-highlight: #FFFFFF;
-  --white: #FFFFFF;
-
-  --accent-red: #F48FB1;
-  --accent-red-tint: rgba(244, 143, 177, 0.15);
-  --accent-light-red: #FFBED1;
-  --accent-bright-red: #FFDAE5;
-
-  --accent-violet: #D0A2FF;
-  --accent-teal: #9CF6F6;
-  --accent-yellow: #FFE29D; */
-
-
-  --font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui,
-    sans-serif;
-  --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+  --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+  --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 
   --fz-xxs: 12px;
   --fz-xs: 13px;
@@ -73,7 +43,8 @@
 
   --ham-before: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
   --ham-before-active: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
-  --ham-after: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  --ham-after: bottom 0.1s ease-in 0.25s,
+    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
   --ham-after-active: bottom 0.1s ease-out,
     transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
 }

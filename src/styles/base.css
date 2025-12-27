@@ -234,8 +234,7 @@ a {
   transition: var(--transition);
 }
 
-a:hover,
-a:focus {
+a:hover {
   color: var(--accent-bright-red);
 }
 
