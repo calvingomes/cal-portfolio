@@ -25,19 +25,23 @@ const Contact = () => {
     <section
       id="contact"
       className={styles.contactSection}
-      ref={(el) => {revealContainer.current = el}}
+      ref={(el) => {
+        revealContainer.current = el;
+      }}
     >
       <h2 className={`numbered-heading ${styles.overline}`}>What’s Next?</h2>
 
       <h2 className={styles.title}>Get In Touch</h2>
 
       <p>
-        Although I’m not currently looking for any new opportunities, my inbox is always open.
-        Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+        I’m always interested in hearing about new challenges, high-traffic
+        solutions, or how we can make the web more accessible. If you have a
+        question or an opportunity you’d like to discuss, feel free to drop a
+        line!
       </p>
 
       <a className={styles.emailLink} href={`mailto:${email}`}>
-        Say Hello
+        Say Hi!
       </a>
     </section>
   );

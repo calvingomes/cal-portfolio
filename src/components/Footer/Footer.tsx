@@ -20,7 +20,7 @@ const Footer = () => {
       </div>
 
       <div className={styles.credit} tabIndex={-1}>
-        <a href="">
+        <a href="https://github.com/calvingomes/calcal" target="_blank">
           <div>Designed and Built by Calvin with Next.js</div>
         </a>
       </div>
