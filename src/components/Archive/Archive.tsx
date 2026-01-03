@@ -35,7 +35,7 @@ const Archive = () => {
 
   return (
     <>
-      <header ref={(el) =>{revealTitle.current = el}}>
+      <header className={styles.header} ref={(el) =>{revealTitle.current = el}}>
         <h1 className="big-heading">Archive</h1>
         <p className="subtitle">A big list of things I’ve worked on</p>
       </header>
@@ -84,6 +84,18 @@ const Archive = () => {
 
                 <td className={styles.links}>
                   <div>
+                    {project.playstore && (
+                      <a href={project.playstore} aria-label="Playstore Link">
+                        <Icon name="PlayStore" />
+                      </a>
+                    )}
+
+                    {project.appstore && (
+                      <a href={project.appstore} aria-label="Appstore Link">
+                        <Icon name="AppStore" />
+                      </a>
+                    )}
+
                     {project.external && (
                       <a href={project.external} aria-label="External Link">
                         <Icon name="External" />
