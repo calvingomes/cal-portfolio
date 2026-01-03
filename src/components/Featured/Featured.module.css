@@ -185,6 +185,7 @@
   color: var(--text-primary);
   font-size: var(--fz-lg);
   box-shadow: 0 10px 30px -15px var(--shadow);
+  text-align: left;
 }
 
 @media (max-width: 768px) {
@@ -295,6 +296,7 @@
   border-radius: var(--border-radius);
   vertical-align: middle;
   position: relative;
+  overflow: hidden;
 }
 
 .projectImage a:hover,
@@ -324,16 +326,20 @@
 }
 
 .img {
+  display: block;
+  width: 100%;
+  height: auto;
   border-radius: var(--border-radius);
   mix-blend-mode: multiply;
   filter: grayscale(100%) contrast(1) brightness(90%);
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {
   .img {
+    width: 100%;
+    height: auto;
     object-fit: cover;
-    width: auto;
-    height: 100%;
     filter: grayscale(100%) contrast(1) brightness(50%);
   }
 }

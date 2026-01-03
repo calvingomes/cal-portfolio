@@ -50,7 +50,7 @@ const Featured = () => {
                   <p className={styles.projectOverline}>Featured Project</p>
 
                   <h3 className={styles.projectTitle}>
-                    <a href={project.external}>{project.title}</a>
+                    <a href={project.external} target="_blank" rel="noreferrer noopener">{project.title}</a>
                   </h3>
 
                   <div className={styles.projectDescription}>
@@ -67,19 +67,13 @@ const Featured = () => {
 
                   <div className={styles.projectLinks}>
                     {project.cta && (
-                      <a href={project.cta} className={styles.cta}>
+                      <a href={project.cta} className={styles.cta} target="_blank" rel="noreferrer noopener">
                         Learn More
                       </a>
                     )}
 
-                    {project.github && (
-                      <a href={project.github} aria-label="GitHub Link">
-                        <Icon name="GitHub" />
-                      </a>
-                    )}
-
-                    {project.external && !project.cta && (
-                      <a href={project.external} className={styles.external}>
+                    {project.external && (
+                      <a href={project.external} className={styles.external} target="_blank" rel="noreferrer noopener">
                         <Icon name="External" />
                       </a>
                     )}
@@ -89,8 +83,9 @@ const Featured = () => {
 
               <div className={styles.projectImage}>
                 <a
-                  href={project.external || project.github || "#"}
+                  href={project.external}
                   aria-label={project.title}
+                  target="_blank" rel="noreferrer noopener"
                 >
                   <Image
                     src={project.cover}

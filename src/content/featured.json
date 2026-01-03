@@ -1,38 +1,27 @@
 [
   {
     "date": 1,
-    "title": "Project One",
-    "external": "https://example.com",
-    "github": "https://github.com",
-    "cover": "/images/featured/project-one.png",
-    "tech": [
-      "React",
-      "Styled Components"
-    ],
-    "cta": "https://link.com",
-    "description": "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on [Visual Studio Marketplace]. A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on [Visual Studio Marketplace]"
+    "title": "RAF Museum",
+    "external": "https://www.rafmuseum.org.uk/",
+    "cover": "/images/featured/raf-museum.webp",
+    "tech": ["Astro", "React", "Headless Wordpress", "Vite", "Typescript"],
+    "cta": "https://bolser.co.uk/case-studies/rafmuseum",
+    "description": "A digital overhaul for a national museum, focusing on accessible, component-driven engineering. By implementing a mobile-first, SEO-optimized architecture, the platform delivered a 124% increase in conversions and significantly improved engagement across high-traffic visitor pages."
   },
   {
     "date": 2,
-    "title": "Project two",
-    "external": "https://example.com",
-    "github": "https://github.com",
-    "cover": "/images/featured/project-one.png",
+    "title": "Xbox Interactive Studios",
+    "external": "https://v3.xbox-interactive.com/35/modals/live-stream",
+    "cover": "/images/featured/xis.webp",
     "tech": [
-      "React",
-      "Styled Components",
-      "Gatsby",
-      "GraphQL",
+      "Vue",
+      "Vite",
       "Contentful",
-      "Netlify",
-      "React",
-      "Styled Components",
-      "Gatsby",
-      "GraphQL",
-      "Contentful",
-      "Netlify"
+      "Microsoft Azure",
+      "Shaka Player",
+      "Typescript"
     ],
-    "cta": "https://link.com",
-    "description": "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on [Visual Studio Marketplace]"
+    "cta": "https://bolser.co.uk/case-studies/xbox",
+    "description": "An award-winning retail platform for the Xbox ecosystem, serving millions of users across 20 countries. I helped engineer its high-performance storefront architecture, integrating live-streaming and Azure AI to support 17 languages and 40+ global retailers."
   }
 ]
