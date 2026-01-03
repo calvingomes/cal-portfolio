@@ -1,62 +1,154 @@
 [
   {
-    "date": "2017-11-01",
-    "title": "My Project",
-    "tech": ["React", "Next.js"],
-    "github": "https://github.com/project",
-    "external": "https://project.com",
+    "date": "2025",
+    "title": "Football Foundation",
+    "tech": ["Vue", "Drupal", "Twig"],
+    "external": "https://footballfoundation.org.uk/",
     "showInProjects": true,
-    "company": "Apple",
-    "description": "Facebook Messenger chat bot extension featuring authentication and full song streaming from within the Messenger app. Read more about it on"
+    "company": "Bolser Digital Agency",
+    "description": "A user-centric transformation for the UK's largest sports charity, driving a 500% increase in grant applications through an accessible, high-performance architecture."
   },
   {
-    "date": "2017-11-01",
-    "title": "My Project",
-    "tech": ["React", "Next.js"],
-    "github": "https://github.com/project",
-    "external": "https://project.com",
+    "date": "2025",
+    "title": "Premier League Stadium Fund",
+    "tech": ["Vue", "Drupal", "Twig"],
+    "external": "https://premierleaguestadiumfund.co.uk/",
     "showInProjects": true,
-    "company": "Apple",
-    "description": "Facebook Messenger chat bot extension featuring authentication and full song streaming from within the Messenger app. Read more about it on"
+    "company": "Bolser Digital Agency",
+    "description": "A specialized digital platform engineered to streamline funding for stadium safety and infrastructure through an accessible, high-performance experience for UK football clubs."
   },
   {
-    "date": "2017-11-01",
-    "title": "My Project",
-    "tech": ["React", "Next.js"],
-    "github": "https://github.com/project",
-    "external": "https://project.com",
+    "date": "2025",
+    "title": "Garolla",
+    "tech": ["Vue", "Strapi", "Vite"],
+    "external": "https://garolla.co.uk/",
     "showInProjects": true,
-    "company": "Apple",
-    "description": "Facebook Messenger chat bot extension featuring authentication and full song streaming from within the Messenger app. Read more about it on"
+    "company": "Bolser Digital Agency",
+    "description": "A high-conversion digital transformation leveraging a headless architecture to modernize the customer journey and maximize lead generation for the UK’s leading roller door manufacturer."
   },
   {
-    "date": "2017-11-01",
-    "title": "My Project",
-    "tech": ["React", "Next.js"],
-    "github": "https://github.com/project",
-    "external": "https://project.com",
+    "date": "2025",
+    "title": "Partners for Purpose",
+    "tech": ["Vue", "Strapi", "Vite"],
+    "external": "https://www.partnersforpurpose.org.uk/",
     "showInProjects": true,
-    "company": "Apple",
-    "description": "Facebook Messenger chat bot extension featuring authentication and full song streaming from within the Messenger app. Read more about it on"
+    "company": "Bolser Digital Agency",
+    "description": "A mission-driven digital platform focused on high accessibility and seamless content delivery to bridge the gap between businesses and charitable organizations."
   },
   {
-    "date": "2017-11-01",
-    "title": "My Project",
-    "tech": ["React", "Next.js"],
-    "github": "https://github.com/project",
-    "external": "https://project.com",
+    "date": "2024",
+    "title": "Innovation Hub",
+    "tech": ["Vue", "Strapi", "Vite"],
+    "external": "https://ukinnovationhub.ukri.org/",
     "showInProjects": true,
-    "company": "Apple",
-    "description": "Facebook Messenger chat bot extension featuring authentication and full song streaming from within the Messenger app. Read more about it on"
+    "company": "Bolser Digital Agency",
+    "description": "A scalable digital platform for UKRI designed to showcase national innovation through an accessible, high-performance architecture."
   },
   {
-    "date": "2017-11-01",
-    "title": "My Project",
-    "tech": ["React", "Next.js"],
-    "github": "https://github.com/project",
-    "external": "https://project.com",
+    "date": "2024",
+    "title": "Innovate No Limits",
+    "tech": ["Vue", "Strapi", "Vite"],
+    "external": "https://nolimits.ukri.org/",
     "showInProjects": true,
-    "company": "Apple",
-    "description": "Facebook Messenger chat bot extension featuring authentication and full song streaming from within the Messenger app. Read more about it on"
+    "company": "Bolser Digital Agency",
+    "description": "A dynamic digital platform designed to promote diverse career pathways in research and innovation, engineered with a focus on high accessibility and engaging, component-based storytelling."
+  },
+  {
+    "date": "2024",
+    "title": "Techex",
+    "tech": ["Vue", "Strapi", "Vite"],
+    "external": "https://www.techex.tv/",
+    "showInProjects": true,
+    "company": "Bolser Digital Agency",
+    "description": "A high-performance digital presence for a leader in video over IP technology, engineered to showcase complex broadcast solutions through a clean, modern, and SEO-optimized architecture."
+  },
+  {
+    "date": "2024",
+    "title": "UPower Dashboard",
+    "tech": ["React", "Node", "Python"],
+    "showInProjects": true,
+    "company": "U Energy",
+    "description": "An enterprise-grade energy management dashboard engineered to provide real-time monitoring and intelligent control of solar arrays and battery storage systems."
+  },
+  {
+    "date": "2024",
+    "title": "U Energy Solar",
+    "tech": ["React", "Node", "Wordpress"],
+    "external": "https://www.uenergysolar.co.uk/",
+    "showInProjects": true,
+    "company": "U Energy",
+    "description": "A high-performance commercial website for a leading renewable energy provider, engineered to showcase large-scale solar solutions and drive lead generation through a clean, conversion-focused frontend."
+  },
+  {
+    "date": "2021",
+    "title": "OkCredit",
+    "tech": ["React", "Node", "TypeScript", "Redux", "Handlebars"],
+    "external": "https://okcredit.in/",
+    "playstore": "https://play.google.com/store/apps/details?id=in.okcredit.merchant",
+    "appstore": "https://apps.apple.com/in/app/okcredit-udhar-bahi-khata/id1488748286",
+    "showInProjects": true,
+    "company": "Codingmart Technologies",
+    "description": "A high-scale digital ecosystem for a leading fintech platform, engineered to digitize bookkeeping and streamline credit management for millions of small businesses."
+  },
+  {
+    "date": "2021",
+    "title": "OkCredit Blog",
+    "tech": ["React", "Ghost CMS", "Styled Components"],
+    "external": "https://okcredit.in/blog",
+    "showInProjects": true,
+    "company": "Codingmart Technologies",
+    "description": "A custom-built, high-performance publishing platform for OkCredit, utilizing Ghost CMS to deliver a seamless, SEO-optimized content experience for one of India's largest fintech communities."
+  },
+  {
+    "date": "2023",
+    "title": "Nykaa Fashion",
+    "tech": ["React", "Node", "Redux"],
+    "external": "https://www.nykaa.com/",
+    "playstore": "https://play.google.com/store/search?q=nykaa&c=apps",
+    "appstore": "https://apps.apple.com/in/app/nykaa-makeup-beauty-shopping/id1022363908",
+    "showInProjects": true,
+    "company": "Codingmart Technologies",
+    "description": "A high-traffic interactive marketing module for India’s leading beauty retailer, engineered to drive user engagement and conversion through gamified reward systems during peak sale events."
+  },
+  {
+    "date": "2020",
+    "title": "AFK by Decathlon",
+    "tech": ["React", "Node"],
+    "showInProjects": true,
+    "company": "Codingmart Technologies",
+    "description": "A gamified fitness platform for Decathlon that incentivized physical activity through a 'move-to-earn' ecosystem, integrating wearable data to reward users for active lifestyles."
+  },
+  {
+    "date": "2019",
+    "title": "Awestruck Studios",
+    "tech": ["HTML5", "CSS3", "Js", "Bootstrap"],
+    "showInProjects": true,
+    "company": "Freelance",
+    "description": "-"
+  },
+  {
+    "date": "2019",
+    "title": "Bluebell",
+    "tech": ["HTML5", "CSS3", "Js", "Bootstrap"],
+    "showInProjects": true,
+    "company": "Freelance",
+    "description": "-"
+  },
+  {
+    "date": "2019",
+    "title": "Inspremac Engineers",
+    "tech": ["HTML5", "CSS3", "Js", "Bootstrap"],
+    "showInProjects": true,
+    "company": "Freelance",
+    "description": "-"
+  },
+  {
+    "date": "2018",
+    "title": "Easy Listy",
+    "tech": ["jQuery", "PhoneGap", "Material UI"],
+    "github": "https://github.com/calvingomes/EasyListy/",
+    "showInProjects": true,
+    "company": "-",
+    "description": "A lightweight cross-platform utility application built with PhoneGap and jQuery, designed to provide a seamless, local-first experience for managing tasks and real-time notifications."
   }
 ]
