@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import Link from "next/link";
 import loadScrollReveal from "@/utils/sr";
 import { srConfig } from "@/config";
@@ -10,8 +10,6 @@ import projectsData from "@/content/projects.json";
 import styles from "./Projects.module.css";
 
 const Projects = () => {
-  const [showMore, setShowMore] = useState(false);
-
   const revealTitle = useRef<HTMLHeadingElement | null>(null);
   const revealArchive = useRef<HTMLAnchorElement | null>(null);
   const revealProjects = useRef<HTMLLIElement[]>([]);
@@ -40,7 +38,7 @@ const Projects = () => {
   );
 
   const firstSix = sorted.slice(0, GRID_LIMIT);
-  const projectsToShow = showMore ? sorted : firstSix;
+  const projectsToShow = firstSix;
 
   const renderProject = (project: any) => {
     const { title, tech, github, external, description } = project;
@@ -101,10 +99,6 @@ const Projects = () => {
     <div className={styles.projectsSection}>
       <h2 ref={revealTitle}>Other Noteworthy Projects</h2>
 
-      <Link href="/archive" className={`inline-link ${styles.archiveLink}`} ref={revealArchive}>
-        view the archive
-      </Link>
-
       <ul className={styles.projectsGrid}>
         {projectsToShow.map((project, i) => (
           <li
@@ -119,9 +113,9 @@ const Projects = () => {
         ))}
       </ul>
 
-      <button className={styles.moreButton} onClick={() => setShowMore(!showMore)}>
-        Show {showMore ? "Less" : "More"}
-      </button>
+      <Link href="/archive" className={styles.moreButton} ref={revealArchive}>
+        view the archive
+      </Link>
     </div>
   );
 };

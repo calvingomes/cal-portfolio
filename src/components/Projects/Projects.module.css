@@ -23,15 +23,6 @@
   font-size: clamp(24px, 5vw, var(--fz-heading));
 }
 
-.archiveLink {
-  font-family: var(--font-mono);
-  font-size: var(--fz-sm);
-}
-
-.archiveLink::after {
-  bottom: 0.1em;
-}
-
 .projectsGrid {
   list-style: none;
   padding: 0;
