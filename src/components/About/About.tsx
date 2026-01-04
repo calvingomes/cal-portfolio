@@ -77,7 +77,7 @@ const About = () => {
         <div className={styles.pic}>
           <div className={styles.wrapper}>
             <Image
-              src="/images/my-photo.jpg"
+              src="/images/my-photo.webp"
               alt="My Photo"
               width={300}
               height={300}
