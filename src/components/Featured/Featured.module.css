@@ -24,7 +24,7 @@
 }
 
 .project:not(:last-of-type) {
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 }
 
 @media (max-width: 768px) {
