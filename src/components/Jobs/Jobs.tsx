@@ -77,7 +77,6 @@ const Jobs = () => {
             </button>
           ))}
 
-          {/* Moving highlight indicator */}
           <span
             className={styles.highlight}
             style={{ "--activeId": activeTabId } as React.CSSProperties}

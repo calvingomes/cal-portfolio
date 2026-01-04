@@ -79,7 +79,7 @@
 
 @media (max-width: 600px) {
   .tabButton {
-    min-width: 120px;
+    min-width: 200px;
     padding: 0 15px;
     border-left: 0;
     border-bottom: 2px solid var(--medium-grey);
