@@ -64,12 +64,6 @@
   transition: var(--transition);
 }
 
-.logo a:hover,
-.logo a:focus {
-  outline: 0;
-  transform: translate(-4px, -4px);
-}
-
 .links {
   display: flex;
   align-items: center;
