@@ -1,9 +1,8 @@
 :root {
-  --deep-charcoal: #141414;
-  --charcoal: #1a1a1a;
+  --charcoal: #141414;
   --dark-grey: #282828;
   --medium-grey: #383838;
-  --shadow: rgba(20, 20, 20, 0.8);
+  --shadow: #141414cc;
 
   --text-subtle: #666666;
   --text-secondary: #a0a0a0;
@@ -12,9 +11,8 @@
   --white: #ffffff;
 
   --accent-red: #e55c50;
-  --accent-red-tint: rgba(229, 92, 80, 0.15);
+  --accent-red-tint: #e55c5026;
   --accent-bright-red: #ff8c8c;
-  /* --text-primary: #D6D6D6; */
 
   --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
@@ -31,7 +29,6 @@
 
   --border-radius: 4px;
   --nav-height: 90px;
-  --nav-scroll-height: 70px;
 
   --tab-height: 42px;
   --tab-width: 120px;
@@ -40,11 +37,4 @@
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 
   --hamburger-width: 30px;
-
-  --ham-before: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
-  --ham-before-active: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
-  --ham-after: bottom 0.1s ease-in 0.25s,
-    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  --ham-after-active: bottom 0.1s ease-out,
-    transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
 }
