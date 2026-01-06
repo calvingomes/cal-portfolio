@@ -9,16 +9,10 @@
 }
 
 .socialLinks {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .socialLinks {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    color: var(--text-primary);
-  }
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: var(--text-primary);
 }
 
 .ul {
