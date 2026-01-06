@@ -4,7 +4,14 @@
     "title": "RAF Museum",
     "external": "https://www.rafmuseum.org.uk/",
     "cover": "/images/featured/raf-museum.webp",
-    "tech": ["Astro", "React", "Headless Wordpress", "Redis", "Vite", "Typescript"],
+    "tech": [
+      "Astro",
+      "React",
+      "Headless Wordpress",
+      "Redis",
+      "Vite",
+      "Typescript"
+    ],
     "cta": "https://bolser.co.uk/case-studies/rafmuseum",
     "description": "A digital overhaul for a national museum, focusing on accessible, component-driven engineering. By implementing a mobile-first, SEO-optimized architecture, the platform delivered a 124% increase in conversions and significantly improved engagement across high-traffic visitor pages."
   },
@@ -22,6 +29,22 @@
       "Typescript"
     ],
     "cta": "https://bolser.co.uk/case-studies/xbox",
+    "description": "An award-winning retail platform for the Xbox ecosystem, serving millions of users across 20 countries. I helped engineer its high-performance storefront architecture, integrating live-streaming and Azure AI to support 17 languages and 40+ global retailers."
+  },
+  {
+    "date": 2,
+    "title": "Football Foundation",
+    "external": "https://footballfoundation.org.uk/",
+    "cover": "/images/featured/ff.webp",
+    "tech": [
+      "Vue",
+      "Vite",
+      "Contentful",
+      "Microsoft Azure",
+      "Shaka Player",
+      "Typescript"
+    ],
+    "cta": "https://bolser.co.uk/case-studies/football-foundation",
     "description": "An award-winning retail platform for the Xbox ecosystem, serving millions of users across 20 countries. I helped engineer its high-performance storefront architecture, integrating live-streaming and Azure AI to support 17 languages and 40+ global retailers."
   }
 ]
