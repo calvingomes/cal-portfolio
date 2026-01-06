@@ -1,10 +1,28 @@
 [
   {
     "date": "2025",
+    "title": "RAF Museum",
+    "tech": ["Astro", "React", "Headless Wordpress"],
+    "external": "https://www.rafmuseum.org.uk/",
+    "showInProjects": false,
+    "company": "Bolser Digital Agency",
+    "description": "A digital overhaul for a national museum, focusing on accessible, component-driven engineering. By implementing a mobile-first, SEO-optimized architecture, the platform delivered a 124% increase in conversions and significantly improved engagement across high-traffic visitor pages."
+  },
+  {
+    "date": "2025",
+    "title": "Xbox Interactive Studios",
+    "tech": ["Vue", "Vite", "Microsoft Azure", "Shaka Player"],
+    "external": "https://v3.xbox-interactive.com/35/modals/live-stream",
+    "showInProjects": false,
+    "company": "Bolser Digital Agency",
+    "description": "An award-winning retail platform for the Xbox ecosystem, serving millions of users across 20 countries. I helped engineer its high-performance storefront architecture, integrating live-streaming and Azure AI to support 17 languages and 40+ global retailers."
+  },
+  {
+    "date": "2025",
     "title": "Football Foundation",
     "tech": ["Vue", "Drupal", "Twig"],
     "external": "https://footballfoundation.org.uk/",
-    "showInProjects": true,
+    "showInProjects": false,
     "company": "Bolser Digital Agency",
     "description": "A user-centric transformation for the UK's largest sports charity, driving a 500% increase in grant applications through an accessible, high-performance architecture."
   },
@@ -100,7 +118,7 @@
     "description": "A custom-built, high-performance publishing platform for OkCredit, utilizing Ghost CMS to deliver a seamless, SEO-optimized content experience for one of India's largest fintech communities."
   },
   {
-    "date": "2023",
+    "date": "2020",
     "title": "Nykaa Fashion",
     "tech": ["React", "Node", "Redux"],
     "external": "https://www.nykaa.com/",
