@@ -18,7 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
+      <body className="antialiased" suppressHydrationWarning>
+        <Navbar />
+        {children}
+        <Footer />
         {/* Google Analytics 4 */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-T0G6QSSLPS"
@@ -36,12 +39,6 @@ export default function RootLayout({
             `,
           }}
         />
-      </head>
-
-      <body className="antialiased" suppressHydrationWarning>
-        <Navbar />
-        {children}
-        <Footer />
       </body>
     </html>
   );
