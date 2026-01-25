@@ -27,10 +27,9 @@ const Hero = () => {
   );
   const four = (
     <p key="4">
-      I build fast, reliable, and accessible solutions. 
-      I focus on making sure complex ideas turn into smooth, 
-      user-friendly digital products. Currently, {`I'm`} contributing to 
-      projects with the excellent team at{" "}
+      I build fast, reliable, and accessible solutions. I focus on turning
+      complex ideas into smooth, user-friendly digital products. I’ve
+      contributed to projects alongside excellent teams, including{" "}
       <a href="https://bolser.co.uk/" target="_blank" rel="noreferrer">
         Bolser Digital Agency
       </a>
@@ -55,14 +54,14 @@ const Hero = () => {
       {prefersReducedMotion
         ? items
         : items.map((item, i) => (
-          <div
-            key={i}
-            className={styles.fadeup}
-            style={{ animationDelay: `${(i + 1) * 100}ms` }}
-          >
-            {item}
-          </div>
-        ))}
+            <div
+              key={i}
+              className={styles.fadeup}
+              style={{ animationDelay: `${(i + 1) * 100}ms` }}
+            >
+              {item}
+            </div>
+          ))}
     </section>
   );
 };

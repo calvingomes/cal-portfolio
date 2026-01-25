@@ -41,28 +41,38 @@ const About = () => {
       <div className={styles.inner}>
         <div className={styles.text}>
           <p>
-            Hi! I’m Calvin, and my passion lies in engineering
-            high-performance, scalable web solutions.
-            As a frontend specialist with over six years
-            of experience, I thrive on crafting component-driven
-            architectures for diverse platforms.
+            Hi! I’m Calvin, and my passion lies in engineering high-performance,
+            scalable web solutions. As a frontend specialist with over six years
+            of experience, I thrive on crafting component-driven architectures
+            for diverse platforms.
           </p>
 
           <p>
-            My technical journey began in 2017 as a freelancer,
-            where I first learned to develop SEO-friendly,
-            mobile-first websites. That foundational experience 
-            led to product engineering roles at <a href="https://codingmart.com/" target="_blank" rel="noreferrer">a Product-Centric consulting firm</a>, 
-            {' '}<a href="https://www.uenergysolar.co.uk/" target="_blank" rel="noreferrer">a Renewable Energy company</a>, 
-            and currently, I contribute to the
-            {' '}<a href="https://bolser.co.uk/" target="_blank" rel="noreferrer">Full-Service Digital Agency</a>
-            {' '}team in Leeds.
+            My technical journey began in 2017 as a freelancer, where I learned
+            to build SEO-friendly, mobile-first websites. That foundation led to
+            product engineering roles across a{" "}
+            <a href="https://codingmart.com/" target="_blank" rel="noreferrer">
+              product-centric consulting firm
+            </a>
+            , a{" "}
+            <a
+              href="https://www.uenergysolar.co.uk/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              renewable energy company
+            </a>
+            , and a{" "}
+            <a href="https://bolser.co.uk/" target="_blank" rel="noreferrer">
+              full-service digital agency
+            </a>
+            , delivering scalable, user-focused web applications.
           </p>
 
           <p>
-            I specialize in modern UI engineering, taking abstract
-            concepts and realizing them as reliable, seamless
-            user experiences across high-traffic environments.
+            I specialize in modern UI engineering, taking abstract concepts and
+            realizing them as reliable, seamless user experiences across
+            high-traffic environments.
           </p>
 
           <p>Here are a few technologies I’ve been working with recently:</p>
