@@ -69,6 +69,7 @@ const Featured = () => {
                     {project.cta && (
                       <a href={project.cta} className={styles.cta} target="_blank" rel="noreferrer noopener">
                         Learn More
+                        <span className={styles.srOnly}>{project.description}</span>
                       </a>
                     )}
 
