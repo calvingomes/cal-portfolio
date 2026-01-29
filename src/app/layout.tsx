@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
 
 import Navbar from "@/components/Navbar/Navbar";
@@ -22,6 +23,8 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        {/* Vercel Analytics */}
+        <Analytics />
         {/* Google Analytics 4 */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-T0G6QSSLPS"
