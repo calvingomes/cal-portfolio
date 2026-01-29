@@ -14,7 +14,9 @@ const Menu = () => {
   const navRef = useRef<HTMLElement>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
 
-  useOnClickOutside(wrapperRef as React.RefObject<HTMLElement>, () => setMenuOpen(false));
+  useOnClickOutside(wrapperRef as React.RefObject<HTMLElement>, () =>
+    setMenuOpen(false),
+  );
 
   // Toggle body blur
   useEffect(() => {
@@ -43,36 +45,50 @@ const Menu = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const toggleMenu = () => setMenuOpen(prev => !prev);
+  const toggleMenu = () => setMenuOpen((prev) => !prev);
 
   return (
     <div className={styles.menu}>
       <div ref={wrapperRef}>
         <button
-          className={`${styles.hamburgerButton} ${menuOpen ? styles.open : ''}`}
+          className={`${styles.hamburgerButton} ${menuOpen ? styles.open : ""}`}
           onClick={toggleMenu}
           ref={buttonRef}
           aria-label="Menu"
           aria-expanded={menuOpen}
         >
           <div className={styles.hamBox}>
-            <div className={`${styles.hamBoxInner} ${menuOpen ? styles.open : ''}`} />
+            <div
+              className={`${styles.hamBoxInner} ${menuOpen ? styles.open : ""}`}
+            />
           </div>
         </button>
 
-        <aside className={`${styles.sidebar} ${menuOpen ? styles.open : ''}`} aria-hidden={!menuOpen}>
+        <aside
+          className={`${styles.sidebar} ${menuOpen ? styles.open : ""}`}
+          aria-hidden={!menuOpen}
+        >
           <nav ref={navRef} className={styles.nav}>
             <ol className={styles.ol}>
               {navLinks.map(({ url, name }, i) => (
                 <li key={i} className={styles.li}>
-                  <Link href={url} onClick={() => setMenuOpen(false)} className={styles.link}>
+                  <Link
+                    href={url}
+                    onClick={() => setMenuOpen(false)}
+                    className={styles.link}
+                  >
                     {name}
                   </Link>
                 </li>
               ))}
             </ol>
 
-            <a href="/resume.pdf" className={styles.resumeLink}>
+            <a
+              href="/api/resume"
+              className={styles.resumeLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Resume
             </a>
           </nav>

@@ -56,7 +56,7 @@ const Navbar = () => {
 
           <a
             className={styles.resumeButton}
-            href="/resume.pdf"
+            href="/api/resume"
             target="_blank"
             rel="noopener noreferrer"
           >
