@@ -47,6 +47,7 @@
 
 .emailLink:hover,
 .emailLink:focus-visible {
+  background-color: var(--accent-red-tint);
   box-shadow: 4px 4px 0 0 var(--accent-red);
   transform: translate(-5px, -5px);
 }

@@ -280,7 +280,9 @@
   transition: var(--transition);
 }
 
-.cta:hover {
+.cta:hover,
+.cta:focus {
+  background-color: var(--accent-red-tint);
   box-shadow: 3px 3px 0 0 var(--accent-red);
   transform: translate(-4px, -4px);
 }

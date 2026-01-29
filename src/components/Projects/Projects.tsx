@@ -11,7 +11,7 @@ import styles from "./Projects.module.css";
 
 const Projects = () => {
   const revealTitle = useRef<HTMLHeadingElement | null>(null);
-  const revealArchive = useRef<HTMLAnchorElement | null>(null);
+  const revealArchive = useRef<HTMLDivElement | null>(null);
   const revealProjects = useRef<HTMLLIElement[]>([]);
   const prefersReducedMotion = usePrefersReducedMotion();
 
@@ -32,9 +32,11 @@ const Projects = () => {
 
   const GRID_LIMIT = 6;
 
-  const filteredProjects = projectsData.filter((p) => p.showInProjects !== false);
+  const filteredProjects = projectsData.filter(
+    (p) => p.showInProjects !== false,
+  );
   const sorted = [...filteredProjects].sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
   );
 
   const firstSix = sorted.slice(0, GRID_LIMIT);
@@ -113,9 +115,11 @@ const Projects = () => {
         ))}
       </ul>
 
-      <Link href="/archive" className={styles.moreButton} ref={revealArchive}>
-        view the archive
-      </Link>
+      <div ref={revealArchive}>
+        <Link href="/archive" className={styles.moreButton}>
+          view the archive
+        </Link>
+      </div>
     </div>
   );
 };
