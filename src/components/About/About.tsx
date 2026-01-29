@@ -91,7 +91,6 @@ const About = () => {
               alt="My Photo"
               width={300}
               height={300}
-              priority
               className={styles.img}
             />
           </div>
