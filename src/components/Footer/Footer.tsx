@@ -11,7 +11,7 @@ const Footer = () => {
         <ul className={styles.ul}>
           {socialMedia.map(({ name, url }, i) => (
             <li key={i}>
-              <a href={url} aria-label={name}>
+              <a href={url} aria-label={name} target="_blank" rel="noreferrer">
                 <Icon name={name} />
               </a>
             </li>
@@ -20,7 +20,11 @@ const Footer = () => {
       </div>
 
       <div className={styles.credit} tabIndex={-1}>
-        <a href="https://github.com/calvingomes/cal-portfolio" target="_blank">
+        <a
+          href="https://github.com/calvingomes/cal-portfolio"
+          target="_blank"
+          rel="noreferrer"
+        >
           <div>Designed and Built by Calvin with Next.js</div>
         </a>
       </div>
