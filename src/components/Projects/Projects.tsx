@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { pushDL } from "@/lib/datalayer";
+
 import Link from "next/link";
 import loadScrollReveal from "@/utils/sr";
 import { srConfig } from "@/config";
@@ -14,6 +16,12 @@ const Projects = () => {
   const revealArchive = useRef<HTMLDivElement | null>(null);
   const revealProjects = useRef<HTMLLIElement[]>([]);
   const prefersReducedMotion = usePrefersReducedMotion();
+
+  const fireViewArchiveEvent = () => {
+    pushDL("view_archive", {
+      location: "projects",
+    });
+  };
 
   /* ScrollReveal */
   useEffect(() => {
@@ -116,7 +124,11 @@ const Projects = () => {
       </ul>
 
       <div ref={revealArchive}>
-        <Link href="/archive" className={styles.moreButton}>
+        <Link
+          href="/archive"
+          className={styles.moreButton}
+          onClick={() => fireViewArchiveEvent()}
+        >
           view the archive
         </Link>
       </div>

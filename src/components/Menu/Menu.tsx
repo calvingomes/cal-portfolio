@@ -6,6 +6,7 @@ import styles from "./Menu.module.css";
 import { navLinks } from "@/config";
 import { KEY_CODES } from "@/utils";
 import { useOnClickOutside } from "@/hooks";
+import { pushDL } from "@/lib/datalayer";
 
 const Menu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,6 +14,12 @@ const Menu = () => {
   const buttonRef = useRef<HTMLButtonElement>(null);
   const navRef = useRef<HTMLElement>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
+
+  const fireResumeDownloadEvent = () => {
+    pushDL("resume_download", {
+      location: "mobile-navbar",
+    });
+  };
 
   useOnClickOutside(wrapperRef as React.RefObject<HTMLElement>, () =>
     setMenuOpen(false),
@@ -88,6 +95,7 @@ const Menu = () => {
               className={styles.resumeLink}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => fireResumeDownloadEvent()}
             >
               Resume
             </a>

@@ -3,11 +3,18 @@
 import { useState, useEffect } from "react";
 import styles from "./Hero.module.css";
 import { usePrefersReducedMotion } from "@/hooks";
+import { pushDL } from "@/lib/datalayer";
 
 const Hero = () => {
   const prefersReducedMotion = usePrefersReducedMotion();
-
   const [mounted, setMounted] = useState(false);
+
+  const fireSendEmailEvent = () => {
+    pushDL("send_email", {
+      location: "hero",
+    });
+  };
+
   useEffect(() => {
     queueMicrotask(() => setMounted(true));
   }, []);
@@ -42,6 +49,7 @@ const Hero = () => {
       className={styles.emailLink}
       href="mailto:calvingomes045@gmail.com"
       rel="noreferrer"
+      onClick={() => fireSendEmailEvent()}
     >
       Get In Touch
     </a>

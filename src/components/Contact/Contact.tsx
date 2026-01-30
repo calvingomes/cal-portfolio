@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { pushDL } from "@/lib/datalayer";
+
 import loadScrollReveal from "@/utils/sr";
 import { srConfig, email } from "@/config";
 import { usePrefersReducedMotion } from "@/hooks";
@@ -9,6 +11,12 @@ import styles from "./Contact.module.css";
 const Contact = () => {
   const revealContainer = useRef<HTMLElement | null>(null);
   const prefersReducedMotion = usePrefersReducedMotion();
+
+  const fireSendEmailEvent = () => {
+    pushDL("send_email", {
+      location: "contact",
+    });
+  };
 
   useEffect(() => {
     if (prefersReducedMotion) return;
@@ -40,7 +48,11 @@ const Contact = () => {
         line!
       </p>
 
-      <a className={styles.emailLink} href={`mailto:${email}`}>
+      <a
+        className={styles.emailLink}
+        href={`mailto:${email}`}
+        onClick={() => fireSendEmailEvent()}
+      >
         Say Hi!
       </a>
     </section>

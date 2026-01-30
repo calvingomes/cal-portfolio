@@ -19,7 +19,7 @@ const Navbar = () => {
 
   const fireResumeDownloadEvent = () => {
     pushDL("resume_download", {
-      location: "navbar",
+      location: "desktop-navbar",
     });
   };
 
