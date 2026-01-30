@@ -6,14 +6,21 @@ export const email = "calvingomes045@gmail.com";
 export type SocialMediaItem = {
   name: IconName;
   url: string;
+  fireEvent: string;
 };
 
-
-export const socialMedia: { name: IconName; url: string }[] = [
-  { name: "GitHub", url: "https://github.com/calvingomes" },
-  { name: "Linkedin", url: "https://www.linkedin.com/in/calvingomes045/" },
+export const socialMedia: SocialMediaItem[] = [
+  {
+    name: "GitHub",
+    url: "https://github.com/calvingomes",
+    fireEvent: "github",
+  },
+  {
+    name: "Linkedin",
+    url: "https://www.linkedin.com/in/calvingomes045/",
+    fireEvent: "linkedin",
+  },
 ];
-
 
 // Navigation items
 export type NavLink = {
@@ -27,13 +34,6 @@ export const navLinks: NavLink[] = [
   { name: "Work", url: "/#projects" },
   { name: "Contact", url: "/#contact" },
 ];
-
-// Colors (readonly: as const)
-export const colors = {
-  green: "#64ffda",
-  navy: "#0a192f",
-  darkNavy: "#020c1b",
-} as const;
 
 // ScrollReveal settings
 export const srConfig = (delay = 200, viewFactor = 0.25) => ({
