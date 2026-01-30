@@ -1,6 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { pushDL } from "@/lib/datalayer";
+
 import Link from "next/link";
 import styles from "./Navbar.module.css";
 import { navLinks } from "@/config";
@@ -12,8 +14,14 @@ const Navbar = () => {
   const [scrolledToTop, setScrolledToTop] = useState(true);
 
   const getSectionId = (url: string) => url.split("#")[1] ?? "";
-  const sectionIds = ['home', 'about', 'jobs', 'projects', 'contact'];
+  const sectionIds = ["home", "about", "jobs", "projects", "contact"];
   const activeSection = useActiveSection(sectionIds);
+
+  const fireResumeDownloadEvent = () => {
+    pushDL("resume_download", {
+      location: "navbar",
+    });
+  };
 
   useEffect(() => {
     const onScroll = () => {
@@ -23,8 +31,9 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const headerClass = `${styles.header} ${scrollDirection === "up" && !scrolledToTop ? styles.scrollUp : ""
-    } ${scrollDirection === "down" && !scrolledToTop ? styles.scrollDown : ""}`;
+  const headerClass = `${styles.header} ${
+    scrollDirection === "up" && !scrolledToTop ? styles.scrollUp : ""
+  } ${scrollDirection === "down" && !scrolledToTop ? styles.scrollDown : ""}`;
 
   return (
     <header className={headerClass}>
@@ -45,12 +54,12 @@ const Navbar = () => {
                 <li key={i} className={styles.li}>
                   <Link
                     href={url}
-                    className={isActive ? styles.activeLink : ''}
+                    className={isActive ? styles.activeLink : ""}
                   >
                     {name}
                   </Link>
                 </li>
-              )
+              );
             })}
           </ol>
 
@@ -59,6 +68,7 @@ const Navbar = () => {
             href="/api/resume"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => fireResumeDownloadEvent()}
           >
             Resume
           </a>
