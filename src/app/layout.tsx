@@ -10,6 +10,9 @@ import "./global.css";
 export const metadata: Metadata = {
   title: "Calvin Gomes",
   description: "Frontend Web Developer",
+  verification: {
+    google: "u5n_AvAN8QO16-AVLxYExIgsRZ3r1D2OtmuDaiWZj3w",
+  },
 };
 
 export default function RootLayout({
