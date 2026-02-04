@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { pushDL } from "@/lib/datalayer";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 import loadScrollReveal from "@/utils/sr";
 import { srConfig, email } from "@/config";
@@ -13,7 +13,8 @@ const Contact = () => {
   const prefersReducedMotion = usePrefersReducedMotion();
 
   const fireSendEmailEvent = () => {
-    pushDL("send_email", {
+    sendGTMEvent({
+      event: "send_email",
       location: "contact",
     });
   };

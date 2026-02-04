@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { pushDL } from "@/lib/datalayer";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 import Link from "next/link";
 import loadScrollReveal from "@/utils/sr";
@@ -18,7 +18,8 @@ const Projects = () => {
   const prefersReducedMotion = usePrefersReducedMotion();
 
   const fireViewArchiveEvent = () => {
-    pushDL("view_archive", {
+    sendGTMEvent({
+      event: "view_archive",
       location: "projects",
     });
   };

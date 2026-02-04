@@ -1,13 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { pushDL } from "@/lib/datalayer";
 
 import Link from "next/link";
 import styles from "./Navbar.module.css";
 import { navLinks } from "@/config";
 import { useScrollDirection, useActiveSection } from "@/hooks";
 import Menu from "@components/Menu/Menu";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 const Navbar = () => {
   const scrollDirection = useScrollDirection() ?? "up";
@@ -18,7 +18,8 @@ const Navbar = () => {
   const activeSection = useActiveSection(sectionIds);
 
   const fireResumeDownloadEvent = () => {
-    pushDL("resume_download", {
+    sendGTMEvent({
+      event: "resume_download",
       location: "desktop-navbar",
     });
   };

@@ -3,14 +3,15 @@
 import { useState, useEffect } from "react";
 import styles from "./Hero.module.css";
 import { usePrefersReducedMotion } from "@/hooks";
-import { pushDL } from "@/lib/datalayer";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 const Hero = () => {
   const prefersReducedMotion = usePrefersReducedMotion();
   const [mounted, setMounted] = useState(false);
 
   const fireSendEmailEvent = () => {
-    pushDL("send_email", {
+    sendGTMEvent({
+      event: "send_email",
       location: "hero",
     });
   };

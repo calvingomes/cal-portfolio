@@ -1,6 +1,6 @@
 "use client";
 
-import { pushDL } from "@/lib/datalayer";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 import styles from "./Footer.module.css";
 import Icon from "@/components/icons/icon";
@@ -8,7 +8,8 @@ import { socialMedia } from "@/config";
 
 const Footer = () => {
   const fireSocialMediaEvent = (fireEvent: string) => {
-    pushDL("footer_links", {
+    sendGTMEvent({
+      event: "footer_links",
       location: fireEvent,
     });
   };

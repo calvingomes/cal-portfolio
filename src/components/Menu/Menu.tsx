@@ -6,7 +6,7 @@ import styles from "./Menu.module.css";
 import { navLinks } from "@/config";
 import { KEY_CODES } from "@/utils";
 import { useOnClickOutside } from "@/hooks";
-import { pushDL } from "@/lib/datalayer";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 const Menu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,7 +16,8 @@ const Menu = () => {
   const wrapperRef = useRef<HTMLDivElement>(null);
 
   const fireResumeDownloadEvent = () => {
-    pushDL("resume_download", {
+    sendGTMEvent({
+      event: "resume_download",
       location: "mobile-navbar",
     });
   };
