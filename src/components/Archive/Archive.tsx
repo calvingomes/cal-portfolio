@@ -30,17 +30,27 @@ const Archive = () => {
   }, [prefersReducedMotion]);
 
   const sorted = [...projectsData].sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
   );
 
   return (
     <>
-      <header className={styles.header} ref={(el) =>{revealTitle.current = el}}>
+      <header
+        className={styles.header}
+        ref={(el) => {
+          revealTitle.current = el;
+        }}
+      >
         <h1 className="big-heading">Archive</h1>
         <p className="subtitle">A big list of things I’ve worked on</p>
       </header>
 
-      <div className={styles.tableContainer} ref={(el) => {revealTable.current = el}}>
+      <div
+        className={styles.tableContainer}
+        ref={(el) => {
+          revealTable.current = el;
+        }}
+      >
         <table className={styles.table}>
           <thead>
             <tr>
@@ -85,25 +95,45 @@ const Archive = () => {
                 <td className={styles.links}>
                   <div>
                     {project.playstore && (
-                      <a href={project.playstore} aria-label="Playstore Link">
+                      <a
+                        href={project.playstore}
+                        aria-label="Playstore Link"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <Icon name="PlayStore" />
                       </a>
                     )}
 
                     {project.appstore && (
-                      <a href={project.appstore} aria-label="Appstore Link">
+                      <a
+                        href={project.appstore}
+                        aria-label="Appstore Link"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <Icon name="AppStore" />
                       </a>
                     )}
 
                     {project.external && (
-                      <a href={project.external} aria-label="External Link">
+                      <a
+                        href={project.external}
+                        aria-label="External Link"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <Icon name="External" />
                       </a>
                     )}
 
                     {project.github && (
-                      <a href={project.github} aria-label="GitHub Link">
+                      <a
+                        href={project.github}
+                        aria-label="GitHub Link"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <Icon name="GitHub" />
                       </a>
                     )}
