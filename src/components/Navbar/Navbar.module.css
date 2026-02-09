@@ -71,7 +71,8 @@
   transition: var(--transition);
 }
 
-.logoImage:hover {
+.logoImage:hover,
+.logoImage:focus {
   cursor: pointer;
   transform: scale(1.1);
 }
