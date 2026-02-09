@@ -22,16 +22,18 @@ const About = () => {
   }, [prefersReducedMotion]);
 
   const skills = [
-    "React",
-    "Next.js",
-    "Vue.js",
-    "Astro",
     "TypeScript",
     "JavaScript (ES6+)",
+    "Next.js",
+    "React",
     "GraphQL",
+    "PostgreSQL",
+    "Node.js",
     "Strapi",
-    "Contentful",
+    "Drupal",
     "Wordpress",
+    "Vue.js",
+    "Astro",
   ];
 
   return (
@@ -41,16 +43,17 @@ const About = () => {
       <div className={styles.inner}>
         <div className={styles.text}>
           <p>
-            Hi! I’m Calvin, and my passion lies in engineering high-performance,
-            scalable web solutions. As a frontend specialist with over six years
-            of experience, I thrive on crafting component-driven architectures
-            for diverse platforms.
+            Hi! I’m Calvin, and I specialize in engineering high-performance,
+            end-to-end web solutions. With over six years of experience, I’ve
+            evolved from a frontend specialist into a Full Stack Engineer who
+            thrives on building scalable, component-driven architectures and
+            robust server-side logic.
           </p>
 
           <p>
-            My technical journey began in 2017 as a freelancer, where I learned
-            to build SEO-friendly, mobile-first websites. That foundation led to
-            product engineering roles across a{" "}
+            My technical journey began in 2017 as a freelancer, mastering
+            SEO-friendly, mobile-first design. That foundation led to product
+            engineering roles across a{" "}
             <a href="https://codingmart.com/" target="_blank" rel="noreferrer">
               product-centric consulting firm
             </a>
@@ -70,9 +73,9 @@ const About = () => {
           </p>
 
           <p>
-            I specialize in modern UI engineering, taking abstract concepts and
-            realizing them as reliable, seamless user experiences across
-            high-traffic environments.
+            I bridge the gap between abstract product concepts and reliable,
+            high-traffic reality, delivering integrated web applications that
+            are as functionally deep as they are visually polished.
           </p>
 
           <p>Here are a few technologies I’ve been working with recently:</p>
