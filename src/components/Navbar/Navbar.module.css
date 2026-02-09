@@ -13,7 +13,10 @@
   transition: var(--transition);
   opacity: 1;
   transform: translateY(0px);
-  transition: opacity 0.5s ease, transform 0.5s ease, var(--transition);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease,
+    var(--transition);
 }
 
 @media (max-width: 1080px) {
@@ -56,12 +59,21 @@
 
 .logo a {
   color: var(--accent-red);
-  width: 42px;
-  height: 42px;
   position: relative;
   z-index: 1;
   text-decoration: none;
   transition: var(--transition);
+}
+
+.logoImage {
+  border-radius: 50%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.logoImage:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .links {
@@ -69,7 +81,9 @@
   align-items: center;
   opacity: 1;
   transform: translateY(0px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
 }
 
 @media (max-width: 768px) {

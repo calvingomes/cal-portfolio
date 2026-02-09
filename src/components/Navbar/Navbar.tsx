@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./Navbar.module.css";
 import { navLinks } from "@/config";
 import { useScrollDirection, useActiveSection } from "@/hooks";
@@ -41,7 +42,13 @@ const Navbar = () => {
       <nav className={styles.nav}>
         <div className={styles.logo} tabIndex={-1}>
           <Link href="/" aria-label="home">
-            Calvin Gomes
+            <Image
+              src="/images/my-photo.webp"
+              alt="My Photo"
+              width={50}
+              height={50}
+              className={styles.logoImage}
+            />
           </Link>
         </div>
 
