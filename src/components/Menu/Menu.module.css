@@ -19,7 +19,9 @@
     background: transparent;
     color: inherit;
     text-transform: none;
-    transition: opacity 0.15s linear, filter 0.15s linear;
+    transition:
+      opacity 0.15s linear,
+      filter 0.15s linear;
   }
 
   .hamBox {
@@ -49,7 +51,11 @@
     height: 2px;
     border-radius: 4px;
     background-color: var(--accent-red);
-    transition: transform 0.15s ease, top 0.15s ease, bottom 0.15s ease, opacity 0.15s ease;
+    transition:
+      transform 0.15s ease,
+      top 0.15s ease,
+      bottom 0.15s ease,
+      opacity 0.15s ease;
   }
 
   .hamBoxInner::before {
@@ -156,15 +162,10 @@
     margin: 10% auto 0;
     width: max-content;
     background-color: var(--accent-red);
-    color: var(--deep-navy, #01010a);
+    color: var(--charcoal);
     border-radius: var(--border-radius);
     text-decoration: none;
     font-weight: 600;
     transition: var(--transition);
   }
-}
-
-.resumeLink:focus,
-.resumeLink:hover {
-  filter: brightness(0.95);
 }
