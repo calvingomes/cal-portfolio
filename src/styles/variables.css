@@ -14,7 +14,23 @@
   --accent-red-tint: #e55c5026;
   --accent-bright-red: #ff8c8c;
 
-  --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+  /* --charcoal: #ffffff;
+  --dark-grey: #f5f5f5;
+  --medium-grey: #e0e0e0;
+  --shadow: #0000001a;
+
+  --text-subtle: #999999;
+  --text-secondary: #666666;
+  --text-primary: #333333;
+  --text-highlight: #121212;
+  --white: #000000;
+
+  --accent-red: #d32f2f;
+  --accent-red-tint: #d32f2f15;
+  --accent-bright-red: #b71c1c; */
+
+  --font-sans:
+    "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
   --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 
