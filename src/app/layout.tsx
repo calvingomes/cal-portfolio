@@ -9,7 +9,7 @@ import "./global.css";
 
 export const metadata: Metadata = {
   title: "Calvin Gomes",
-  description: "Frontend Web Developer",
+  description: "Fullstack Web Developer",
   metadataBase: new URL('https://calvingomes.vercel.app'),
   alternates: {
     canonical: '/',
