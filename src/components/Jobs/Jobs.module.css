@@ -68,7 +68,7 @@
 }
 
 .activeTab {
-  color: var(--accent-red);
+  color: var(--accent);
 }
 
 @media (max-width: 768px) {
@@ -96,7 +96,7 @@
   width: 2px;
   height: var(--tab-height);
   border-radius: var(--border-radius);
-  background: var(--accent-red);
+  background: var(--accent);
   transform: translateY(calc(var(--activeId) * var(--tab-height)));
   transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition-delay: 0.1s;
@@ -139,7 +139,7 @@
 }
 
 .company {
-  color: var(--accent-red);
+  color: var(--accent);
 }
 
 .range {
@@ -165,5 +165,5 @@
   content: "▹";
   position: absolute;
   left: 0;
-  color: var(--accent-red);
+  color: var(--accent);
 }

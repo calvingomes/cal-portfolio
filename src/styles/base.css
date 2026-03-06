@@ -16,7 +16,7 @@ html {
 }
 
 :focus {
-  outline: 2px dashed var(--accent-red);
+  outline: 2px dashed var(--accent);
   outline-offset: 3px;
 }
 
@@ -26,7 +26,7 @@ html {
 }
 
 :focus-visible {
-  outline: 2px dashed var(--accent-red);
+  outline: 2px dashed var(--accent);
   outline-offset: 3px;
 }
 
@@ -83,7 +83,7 @@ body.blur header {
   background-color: transparent;
 }
 
-body.blur #content>* {
+body.blur #content > * {
   filter: blur(5px) brightness(0.7);
   transition: var(--transition);
   pointer-events: none;
@@ -165,16 +165,16 @@ h6 {
   position: relative;
   bottom: 4px;
   counter-increment: section;
-  content: '0' counter(section) '.';
+  content: "0" counter(section) ".";
   margin-right: 10px;
-  color: var(--accent-red);
+  color: var(--accent);
   font-family: var(--font-mono);
   font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
   font-weight: 400;
 }
 
 .numbered-heading:after {
-  content: '';
+  content: "";
   display: block;
   position: relative;
   top: -5px;
@@ -229,13 +229,13 @@ a {
   display: inline-block;
   text-decoration: none;
   text-decoration-skip-ink: auto;
-  color: var(--accent-red);
+  color: var(--accent);
   position: relative;
   transition: var(--transition);
 }
 
 a:hover {
-  color: var(--accent-bright-red);
+  color: var(--accent-bright);
 }
 
 button {
@@ -266,7 +266,7 @@ p:last-of-type {
   margin: 0;
 }
 
-p>code {
+p > code {
   background-color: var(--dark-grey);
   color: var(--white);
   font-size: var(--fz-sm);
@@ -275,7 +275,7 @@ p>code {
 }
 
 blockquote {
-  border-left-color: var(--accent-red);
+  border-left-color: var(--accent);
   border-left-style: solid;
   border-left-width: 1px;
   margin-left: 0;
@@ -301,18 +301,18 @@ code {
 }
 
 #logo {
-  color: var(--accent-red);
+  color: var(--accent);
 }
 
 .overline {
-  color: var(--accent-red);
+  color: var(--accent);
   font-family: var(--font-mono);
   font-size: var(--fz-md);
   font-weight: 400;
 }
 
 .subtitle {
-  color: var(--accent-red);
+  color: var(--accent);
   margin: 0 0 20px 0;
   font-size: var(--fz-md);
   font-family: var(--font-mono);
@@ -320,13 +320,13 @@ code {
   line-height: 1.5;
 }
 
-@media (max-width:1080px) {
+@media (max-width: 1080px) {
   .subtitle {
     font-size: var(--fz-sm);
   }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .subtitle {
     font-size: var(--fz-xs);
   }

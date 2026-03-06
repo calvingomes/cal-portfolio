@@ -36,7 +36,7 @@
 
 .ul a:hover,
 .ul a:focus {
-  color: var(--accent-red);
+  color: var(--accent);
   outline: 0;
   transform: translateY(-3px);
 }
@@ -63,6 +63,6 @@
 
 .credit a:hover,
 .credit a:focus {
-  color: var(--accent-red);
+  color: var(--accent);
   outline: 0;
 }

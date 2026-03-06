@@ -8,8 +8,7 @@
   padding: 0;
 }
 
-@media (max-height: 700px) and (min-width: 700px),
-(max-width: 360px) {
+@media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
   .heroSection {
     height: auto;
     padding-top: calc(var(--nav-height) - 20px);
@@ -18,7 +17,7 @@
 
 .heroSection h1 {
   margin: 0 0 30px 4px;
-  color: var(--accent-red);
+  color: var(--accent);
   font-family: var(--font-mono);
   font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
   font-weight: 400;
@@ -44,9 +43,9 @@
   padding: 13px 20px;
   margin-top: 50px;
   background-color: transparent;
-  border: 1px solid var(--accent-red);
+  border: 1px solid var(--accent);
   border-radius: var(--border-radius);
-  color: var(--accent-red);
+  color: var(--accent);
   text-decoration: none;
   font-size: var(--fz-sm);
   font-family: var(--font-mono);
@@ -56,8 +55,8 @@
 
 .emailLink:hover,
 .emailLink:focus {
-  background-color: var(--accent-red-tint);
-  box-shadow: 3px 3px 0 0 var(--accent-red);
+  background-color: var(--accent-tint);
+  box-shadow: 3px 3px 0 0 var(--accent);
   transform: translate(-4px, -4px);
 }
 

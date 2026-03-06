@@ -83,7 +83,7 @@
 }
 
 .folder {
-  color: var(--accent-red);
+  color: var(--accent);
 }
 
 .folder svg {
@@ -163,8 +163,8 @@
 .moreButton {
   display: inline-block;
   background: transparent;
-  border: 1px solid var(--accent-red);
-  color: var(--accent-red);
+  border: 1px solid var(--accent);
+  color: var(--accent);
   padding: 1rem 1.75rem;
   border-radius: var(--border-radius);
   font-size: var(--fz-sm);
@@ -174,7 +174,7 @@
 
 .moreButton:hover,
 .moreButton:focus {
-  background-color: var(--accent-red-tint);
-  box-shadow: 3px 3px 0 0 var(--accent-red);
+  background-color: var(--accent-tint);
+  box-shadow: 3px 3px 0 0 var(--accent);
   transform: translate(-4px, -4px);
 }

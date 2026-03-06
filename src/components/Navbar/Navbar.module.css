@@ -58,7 +58,7 @@
 }
 
 .logo a {
-  color: var(--accent-red);
+  color: var(--accent);
   position: relative;
   z-index: 1;
   text-decoration: none;
@@ -119,13 +119,13 @@
 .li a::before {
   content: "0" counter(item) ".";
   margin-right: 5px;
-  color: var(--accent-red);
+  color: var(--accent);
   font-size: var(--fz-xxs);
 }
 
 .li a:hover,
 .li .activeLink {
-  color: var(--accent-red);
+  color: var(--accent);
   outline: 0;
 }
 
@@ -136,9 +136,9 @@
   padding: 10px 16px;
   margin-left: 15px;
   background-color: transparent;
-  border: 1px solid var(--accent-red);
+  border: 1px solid var(--accent);
   border-radius: var(--border-radius);
-  color: var(--accent-red);
+  color: var(--accent);
   text-decoration: none;
   font-size: var(--fz-sm);
   font-family: var(--font-mono);
@@ -149,7 +149,7 @@
 
 .resumeButton:hover,
 .resumeButton:focus {
-  background-color: var(--accent-red-tint);
-  box-shadow: 3px 3px 0 0 var(--accent-red);
+  background-color: var(--accent-tint);
+  box-shadow: 3px 3px 0 0 var(--accent);
   transform: translate(-4px, -4px);
 }
