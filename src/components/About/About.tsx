@@ -43,17 +43,16 @@ const About = () => {
       <div className={styles.inner}>
         <div className={styles.text}>
           <p>
-            Hi! I’m Calvin, and I specialize in engineering high-performance,
-            end-to-end web solutions. With over six years of experience, I’ve
-            evolved from a frontend specialist into a Full Stack Engineer who
-            thrives on building scalable, component-driven architectures and
-            robust server-side logic.
+            Hi! I’m Calvin, and my passion lies in engineering high-performance,
+            scalable web solutions. As a frontend specialist with over five years
+            of experience, I thrive on crafting component-driven architectures
+            for diverse platforms.
           </p>
 
           <p>
-            My technical journey began in 2017 as a freelancer, mastering
-            SEO-friendly, mobile-first design. That foundation led to product
-            engineering roles across a{" "}
+            My technical journey began in 2017 as a freelancer, where I learned
+            to build SEO-friendly, mobile-first websites. That foundation led to
+            product engineering roles across a{" "}
             <a href="https://codingmart.com/" target="_blank" rel="noreferrer">
               product-centric consulting firm
             </a>
