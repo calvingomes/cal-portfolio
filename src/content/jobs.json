@@ -1,28 +1,27 @@
 [
   {
-    "title": "Full Stack Developer",
+    "title": "Frontend Web Developer",
     "company": "Bolser Digital Agency",
     "location": "Leeds, UK",
     "range": "Jul 2024 — Dec 2025",
     "url": "https://bolser.co.uk/",
     "highlights": [
-      "Architected Headless and Decoupled CMS solutions using Strapi (Node.js), Drupal (PHP) and Wordpress designing custom content schemas and relational data models to power high-traffic applications.",
-      "Developed complex server-side logic and API layers using PHP, Twig, and GraphQL/REST, handling data preprocessing for major platforms like the Football Foundation and Premier League Stadium Fund.",
-      "Engineered 40+ reusable full-stack components that mapped backend data structures to performance-optimized React/Vue UI elements, significantly accelerating development velocity.",
-      "Implemented the modernization of the RAF Museum infrastructure using Astro, reducing load times by 40% while architecting a custom GTM Data Layer and SEO-optimized schema to maintain critical tracking and boost data-fetching performance for Garolla by 67%.",
-      "Managed full-cycle deployments and production environments, ensuring data integrity and system stability across platforms serving thousands of daily users."
+      "Built 40+ reusable components across Strapi, WordPress, Contentful and Drupal - improving development speed and UI consistency across multiple client projects.",
+      "Optimized Garolla's site performance by 67% through frontend optimization, technical SEO audits via Semrush, and GraphQL-driven data fetching. implemented GA4 and GTM to track and improve conversion rates for Google and Meta Ads campaigns.",
+      "Rebuilt the RAF Museum website using Astro, reducing page load times by 30–40% and cutting unnecessary JavaScript execution.",
+      "Revamped the UI/UX for Football Foundation and Premier League Stadium Fund, reducing click depth by 25% and improving task completion speed. Contributed to large-scale, production-grade builds accessed by thousands of users."
     ]
   },
   {
-    "title": "UI/UX Engineer, Full Stack Developer",
+    "title": "UI/UX Engineer, Frontend Web Developer",
     "company": "U Energy",
     "location": "Huddersfield, UK",
     "range": "Jan 2024 — Jun 2024",
     "url": "https://www.uenergysolar.co.uk/",
     "highlights": [
-      "Designed and developed a real-time energy monitoring dashboard using React, Node.js, Express, and MongoDB, designing scalable schemas and optimized queries to process high-frequency time-series data from hardware monitors.",
-      "Implemented a low-latency data layer by integrating WebSockets (Socket.io) and RESTful APIs, enabling live UI updates and production-scale data visualization without manual refreshes.",
-      "Streamlined full-stack delivery by 45% through a unified architecture, aligning Redux state management with backend API structures to ensure seamless data consistency across the platform."
+      "Led a 3-member frontend team to build a real-time energy management dashboard; accelerated delivery efficiency by 45% through structured component architecture.",
+      "Introduced Figma workflows and standardized React + Redux practices, incorporating GTM and GA4 tracking layers to reduce UI inconsistencies and monitor real-time user engagement.",
+      "Integrated Node.js and MongoDB into the frontend workflow, improving high-frequency data flow, system responsiveness, and dashboard performance."
     ]
   },
   {
@@ -32,9 +31,9 @@
     "range": "Dec 2019 — Aug 2022",
     "url": "https://codingmart.com/",
     "highlights": [
-      "Built critical features for OkCredit, a high-volume Fintech platform, ensuring a 94% error-free release rate through robust TypeScript implementation and secure API integrations for thousands of daily users.",
-      "Optimized performance for major clients (AFK by Decathlon), driving 30–40% gains in user engagement by refactoring UI components and improving Core Web Vitals via efficient asset loading.",
-      "Accelerated full-cycle project delivery from conception to production within 2 months; collaborated closely with backend teams to define API contracts and JSON payloads, ensuring seamless data flow and system stability."
+      "Spearheaded the rapid delivery of a high-pressure client project in just two months, achieving a 95% client satisfaction rating and exceeding expectations for quality and deadline adherence.",
+      "Boosted user engagement and application performance for major clients (AFK by Decathlon, OKC Blog) by driving measurable gains of 30–40% through targeted UI and performance optimizations.",
+      "Engineered and launched critical features for OkCredit’s high-volume money transfer application, contributing to a 94% error-free release rate and ensuring system stability across scalable, production-grade systems serving thousands of daily users."
     ]
   },
   {
@@ -44,10 +43,7 @@
     "range": "May 2017 — Nov 2019",
     "url": "",
     "highlights": [
-      "Engineered and deployed 15+ custom, SEO optimised, mobile first websites for SMEs using semantic HTML5, CSS3, and JavaScript.",
-      "Improved website load performance by 20–30% through asset optimisation, clean code practices, and frontend performance tuning.",
-      "Implemented onpage SEO and accessibility best practices, improving search visibility and overall user reach across client sites.",
-      "Managed the end to end project lifecycle, from UI/UX discovery and wireframing to production deployment and hosting."
+      "Delivered 15+ SEO-friendly, mobile-first websites for small businesses using HTML, CSS, and JavaScript. Improved page load performance by 20–30% through frontend optimisation and clean, semantic markup. Applied on-page SEO best practices to enhance search visibility and accessibility."
     ]
   }
 ]
