@@ -8,11 +8,11 @@ import Footer from "@/components/Footer/Footer";
 import "./global.css";
 
 export const metadata: Metadata = {
-  title: "Calvin Gomes",
-  description: "Fullstack Web Developer",
-  metadataBase: new URL('https://calvingomes.vercel.app'),
+  title: "Calvin Gomes | Portfolio",
+  description: "Frontend Web Developer currently based in India",
+  metadataBase: new URL("https://calvingomes.vercel.app"),
   alternates: {
-    canonical: '/',
+    canonical: "/",
   },
   verification: {
     google: "u5n_AvAN8QO16-AVLxYExIgsRZ3r1D2OtmuDaiWZj3w",
