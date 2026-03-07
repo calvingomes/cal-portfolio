@@ -1,89 +1,23 @@
 "use client";
 
-import { useState, useEffect } from "react";
-
-import Link from "next/link";
-import Image from "next/image";
-import styles from "./Navbar.module.css";
-import { navLinks } from "@/config";
-import { useScrollDirection, useActiveSection } from "@/hooks";
-import Menu from "@components/Menu/Menu";
 import { sendGTMEvent } from "@next/third-parties/google";
 
+import DesktopNavbar from "./DesktopNavbar/DesktopNavbar";
+import MobileNavbar from "./MobileNavbar/MobileNavbar";
+
+import styles from "./Navbar.module.css";
+
 const Navbar = () => {
-  const scrollDirection = useScrollDirection() ?? "up";
-  const [scrolledToTop, setScrolledToTop] = useState(true);
-
-  const getSectionId = (url: string) => url.split("#")[1] ?? "";
-  const sectionIds = ["home", "about", "jobs", "projects", "contact"];
-  const activeSection = useActiveSection(sectionIds);
-
-  const fireResumeDownloadEvent = () => {
+  const fireResumeDownloadEvent = (location = 'desktop-navbar') => {
     sendGTMEvent({
       event: "resume_download",
-      location: "desktop-navbar",
+      location: location,
     });
   };
-
-  useEffect(() => {
-    const onScroll = () => {
-      setScrolledToTop(window.pageYOffset < 70);
-    };
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  const headerClass = `${styles.header} ${
-    scrollDirection === "up" && !scrolledToTop ? styles.scrollUp : ""
-  } ${scrollDirection === "down" && !scrolledToTop ? styles.scrollDown : ""}`;
-
   return (
-    <header className={headerClass}>
-      <nav className={styles.nav}>
-        <div className={styles.logo} tabIndex={-1}>
-          <Link href="/" aria-label="home">
-            <Image
-              src="/images/my-photo.webp"
-              alt="My Photo"
-              width={50}
-              height={50}
-              className={styles.logoImage}
-            />
-          </Link>
-        </div>
-
-        <div className={styles.links}>
-          <ol className={styles.ol}>
-            {navLinks.map(({ url, name }, i) => {
-              const sectionId = getSectionId(url);
-              const isActive = activeSection === sectionId;
-
-              return (
-                <li key={i} className={styles.li}>
-                  <Link
-                    href={url}
-                    className={isActive ? styles.activeLink : ""}
-                  >
-                    {name}
-                  </Link>
-                </li>
-              );
-            })}
-          </ol>
-
-          <a
-            className={styles.resumeButton}
-            href="/api/resume"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => fireResumeDownloadEvent()}
-          >
-            Resume
-          </a>
-        </div>
-
-        <Menu />
-      </nav>
+    <header className={styles.header}>
+      <DesktopNavbar fireResumeDownloadEvent={fireResumeDownloadEvent} />
+      <MobileNavbar fireResumeDownloadEvent={fireResumeDownloadEvent} />
     </header>
   );
 };
