@@ -83,7 +83,7 @@ body.blur header {
   background-color: transparent;
 }
 
-body.blur #content > * {
+body.blur #content>* {
   filter: blur(5px) brightness(0.7);
   transition: var(--transition);
   pointer-events: none;
@@ -102,12 +102,12 @@ main {
   width: 100%;
   max-width: 1600px;
   min-height: 100vh;
-  padding: 40px 50px 0 50px;
+  padding: 0 50px;
 }
 
 @media (max-width: 480px) {
   main {
-    padding: 50px 25px 0 25px;
+    padding: 0 25px;
   }
 }
 
@@ -266,7 +266,7 @@ p:last-of-type {
   margin: 0;
 }
 
-p > code {
+p>code {
   background-color: var(--dark-grey);
   color: var(--white);
   font-size: var(--fz-sm);
