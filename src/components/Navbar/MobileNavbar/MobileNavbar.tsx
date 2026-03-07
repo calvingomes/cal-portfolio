@@ -1,13 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { navLinks } from "@/config";
 import { X } from "lucide-react";
+import { NavLogo, NavListItems, ResumeButton } from "../NavShared";
 
 import styles from "./MobileNavbar.module.css";
-import navbarStyles from './../Navbar.module.css'
 
 const MobileNavbar = ({ fireResumeDownloadEvent }: { fireResumeDownloadEvent: (location?: string) => void }) => {
 
@@ -19,17 +16,7 @@ const MobileNavbar = ({ fireResumeDownloadEvent }: { fireResumeDownloadEvent: (l
     <nav className={styles.mobileNavContainer}>
       {!menuOpen &&
         <div className={styles.mobileNav}>
-          <div className={navbarStyles.logo} tabIndex={-1}>
-            <Link href="/" aria-label="home">
-              <Image
-                src="/images/my-photo.webp"
-                alt="My Photo"
-                width={70}
-                height={70}
-                className={navbarStyles.logoImage}
-              />
-            </Link>
-          </div>
+          <NavLogo />
 
           <button
             className={styles.menuButton}
@@ -52,23 +39,13 @@ const MobileNavbar = ({ fireResumeDownloadEvent }: { fireResumeDownloadEvent: (l
         </button>
 
         <ol className={styles.ol}>
-          {navLinks.map(({ url, name }, i) => (
-            <li key={i} className={styles.li}>
-              <Link href={url}>{name}</Link>
-            </li>
-          ))}
+          <NavListItems liClassName={styles.li} />
         </ol>
 
-        <Link
+        <ResumeButton
           className={styles.resumeButton}
-          aria-label="resume"
-          href="/api/resume"
-          target="_blank"
-          rel="noopener noreferrer"
           onClick={() => fireResumeDownloadEvent('mobile-navbar')}
-        >
-          RESUME
-        </Link>
+        />
       </div>
     </nav>
   );

@@ -1,5 +1,4 @@
 .desktopNav {
-    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,12 +8,6 @@
     padding: 12px;
     max-width: 600px;
     height: 90px;
-}
-
-.desktopNav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     position: relative;
     width: 100%;
     color: var(--text-highlight);
