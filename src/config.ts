@@ -29,10 +29,10 @@ export type NavLink = {
 };
 
 export const navLinks: NavLink[] = [
-  { name: "About", url: "/#about" },
-  { name: "Experience", url: "/#jobs" },
-  { name: "Work", url: "/#projects" },
-  { name: "Contact", url: "/#contact" },
+  { name: "ABOUT", url: "/#about" },
+  { name: "EXPERIENCE", url: "/#jobs" },
+  { name: "WORK", url: "/#projects" },
+  { name: "CONTACT", url: "/#contact" },
 ];
 
 // ScrollReveal settings
