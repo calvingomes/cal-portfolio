@@ -91,6 +91,7 @@ const About = () => {
             <Image
               src="/images/my-photo.webp"
               alt="My Photo"
+              loading="lazy"
               width={300}
               height={300}
               className={styles.img}
