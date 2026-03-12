@@ -161,18 +161,6 @@ h6 {
   white-space: nowrap;
 }
 
-.numbered-heading:before {
-  position: relative;
-  bottom: 4px;
-  counter-increment: section;
-  content: "0" counter(section) ".";
-  margin-right: 10px;
-  color: var(--accent);
-  font-family: var(--font-mono);
-  font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
-  font-weight: 400;
-}
-
 .numbered-heading:after {
   content: "";
   display: block;
