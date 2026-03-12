@@ -44,7 +44,7 @@ const About = () => {
         <div className={styles.text}>
           <p>
             Hi! I’m Calvin, and my passion lies in engineering high-performance,
-            scalable web solutions. As a frontend specialist with over five years
+            scalable web solutions. As a frontend specialist with over four years
             of experience, I thrive on crafting component-driven architectures
             for diverse platforms.
           </p>
