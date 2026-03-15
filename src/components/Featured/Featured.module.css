@@ -250,7 +250,7 @@
   }
 
   .project:nth-of-type(odd) .projectTechList li {
-    margin: 0 40px 5px 0;
+    margin: 0 10px 5px 0;
   }
 
   .projectTechList {
