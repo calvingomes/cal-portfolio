@@ -52,7 +52,7 @@
   width: 100%;
   height: var(--tab-height);
   padding: 0 20px 2px;
-  border-left: 2px solid var(--medium-grey);
+  border-left: 2px solid var(--light-grey);
   background-color: transparent;
   color: var(--text-secondary);
   font-family: var(--font-mono);
@@ -82,7 +82,7 @@
     min-width: 200px;
     padding: 0 15px;
     border-left: 0;
-    border-bottom: 2px solid var(--medium-grey);
+    border-bottom: 2px solid var(--light-grey);
     text-align: center;
     justify-content: center;
   }

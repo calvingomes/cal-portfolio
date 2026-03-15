@@ -1,20 +1,16 @@
 :root {
-  --charcoal: #141414;
-  --dark-grey: #232323;
-  --medium-grey: #2f2f2f;
-  --surface: #1b1b1b;
+  --charcoal: #0d0d0d;
+  --dark-grey: #151515;
+  --light-grey: #4d4d4d;
   --shadow: #00000066;
 
-  /* #a19685 */
   --text-primary: #b7ab98;
   --text-secondary: #b8ac99bb;
   --scrollbar: #3e2a2391;
-  /* #0D0D0D */
-
 
   --accent: #eb5939;
   --accent-bright: #ff6c4b;
-  --accent-tint: #c3462a42;
+  --accent-tint: #c54a2e4a;
 
   --font-sans:
     "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
