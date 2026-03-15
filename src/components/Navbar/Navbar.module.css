@@ -24,7 +24,7 @@
 }
 
 .logoImage {
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   object-fit: cover;
   transition: var(--transition);
 }
