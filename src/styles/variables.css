@@ -5,15 +5,16 @@
   --surface: #1b1b1b;
   --shadow: #00000066;
 
-  --text-subtle: #666666;
-  --text-secondary: #a0a0a0;
-  --text-primary: #cacaca;
-  --text-highlight: #f5f5f5;
-  --white: #ffffff;
+  /* #a19685 */
+  --text-primary: #b7ab98;
+  --text-secondary: #b8ac99bb;
+  --scrollbar: #3e2a2391;
+  /* #0D0D0D */
 
-  --accent: #3ecf8e;
-  --accent-bright: #63e6a8;
-  --accent-tint: #3ecf8e26;
+
+  --accent: #eb5939;
+  --accent-bright: #ff6c4b;
+  --accent-tint: #c3462a42;
 
   --font-sans:
     "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,

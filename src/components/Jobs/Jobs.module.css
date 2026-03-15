@@ -144,7 +144,7 @@
 
 .range {
   margin-bottom: 25px !important;
-  color: var(--text-primary);
+  color: var(--text-secondary);
   font-family: var(--font-mono);
   font-size: var(--fz-xs);
 }

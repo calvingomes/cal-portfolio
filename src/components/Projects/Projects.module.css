@@ -95,7 +95,6 @@
   display: flex;
   align-items: center;
   margin-right: -10px;
-  color: var(--text-primary);
 }
 
 .projectLinks a {
@@ -118,7 +117,7 @@
 
 .projectTitle {
   margin: 0 0 10px;
-  color: var(--text-highlight);
+  color: var(--text-primary);
   font-size: var(--fz-xxl);
 }
 
@@ -135,7 +134,7 @@
 }
 
 .projectDescription {
-  color: var(--text-primary);
+  color: var(--text-secondary);
   font-size: 17px;
 }
 

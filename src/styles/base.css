@@ -12,7 +12,7 @@ html {
 
 ::selection {
   background-color: var(--medium-grey);
-  color: var(--text-highlight);
+  color: var(--text-primary);
 }
 
 :focus {
@@ -33,7 +33,7 @@ html {
 /* Scrollbar Styles */
 html {
   scrollbar-width: thin;
-  scrollbar-color: var(--text-subtle) var(--charcoal);
+  scrollbar-color: var(--scrollbar) var(--charcoal);
 }
 
 ::-webkit-scrollbar {
@@ -45,7 +45,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--text-subtle);
+  background-color: var(--scrollbar);
   border: 3px solid var(--charcoal);
   border-radius: 10px;
 }
@@ -83,7 +83,7 @@ body.blur header {
   background-color: transparent;
 }
 
-body.blur #content>* {
+body.blur #content > * {
   filter: blur(5px) brightness(0.7);
   transition: var(--transition);
   pointer-events: none;
@@ -137,7 +137,7 @@ h5,
 h6 {
   margin: 0 0 10px 0;
   font-weight: 600;
-  color: var(--text-highlight);
+  color: var(--text-primary);
   line-height: 1.1;
 }
 
@@ -254,9 +254,9 @@ p:last-of-type {
   margin: 0;
 }
 
-p>code {
+p > code {
   background-color: var(--dark-grey);
-  color: var(--white);
+  color: var(--text-primary);
   font-size: var(--fz-sm);
   border-radius: var(--border-radius);
   padding: 0.3em 0.5em;

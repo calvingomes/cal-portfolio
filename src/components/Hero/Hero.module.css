@@ -13,8 +13,7 @@
   }
 }
 
-@media (max-height: 700px) and (min-width: 700px),
-(max-width: 360px) {
+@media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
   .heroSection {
     height: auto;
     padding-top: calc(var(--nav-height) - 20px);
@@ -30,11 +29,11 @@
 }
 
 .heroSection h2 {
-  color: var(--white);
+  color: var(--text-primary);
 }
 
 .heroSection h3 {
-  color: var(--text-primary);
+  color: var(--text-secondary);
 }
 
 .heroSection p {
