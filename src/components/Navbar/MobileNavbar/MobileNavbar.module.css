@@ -105,7 +105,7 @@
     background: none;
     outline: 0;
     border: 0;
-    color: white;
+    color: var(--text-secondary);
     -webkit-tap-highlight-color: transparent;
   }
 }
