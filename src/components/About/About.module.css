@@ -75,14 +75,13 @@
 .img {
   border-radius: var(--border-radius);
   mix-blend-mode: multiply;
-  filter: grayscale(100%) contrast(1);
+  filter: brightness(90%);
   transition: var(--transition);
   object-fit: cover;
 }
 
 .wrapper:hover .img,
 .wrapper:focus .img {
-  filter: none;
   mix-blend-mode: normal;
 }
 
