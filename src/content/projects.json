@@ -55,6 +55,15 @@
   },
   {
     "date": "2024",
+    "title": "Budweiser Brewing Group",
+    "tech": ["Vue", "Drupal", "Twig"],
+    "external": "https://budweiserbrewinggroup.co.uk/",
+    "showInProjects": true,
+    "company": "Bolser Digital Agency",
+    "description": "A corporate digital platform for a leading UK brewing group, built with headless Drupal and a Vue frontend, delivering an accessible and scalable experience across its beer portfolio and sustainability initiatives."
+  },
+  {
+    "date": "2024",
     "title": "Innovation Hub",
     "tech": ["Vue", "Strapi", "Vite"],
     "external": "https://ukinnovationhub.ukri.org/",
