@@ -10,8 +10,6 @@ export function GET(request: NextRequest) {
 
   if (country === "IN") {
     resume = "/resume/cal-resume-in.pdf";
-  } else if (country === "AE") {
-    resume = "/resume/cal-resume-ae.pdf";
   }
 
   return NextResponse.redirect(new URL(resume, request.nextUrl));
