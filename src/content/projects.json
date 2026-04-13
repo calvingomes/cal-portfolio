@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026",
+    "title": "PageCraft",
+    "tech": ["Next.js", "Supabase", "Vercel"],
+    "external": "https://pagecraft.me/",
+    "showInProjects": false,
+    "company": "Independent",
+    "description": "A block-based link-in-bio and page builder engineered for speed and flexibility, with a shared block architecture, per-viewport layout control, and a CDN-optimized image pipeline."
+  },
+  {
     "date": "2025",
     "title": "RAF Museum",
     "tech": ["Astro", "React", "Headless Wordpress"],

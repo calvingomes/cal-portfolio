@@ -1,6 +1,21 @@
 [
   {
     "date": 1,
+    "title": "Pagecraft",
+    "external": "https://pagecraft.me/",
+    "cover": "/images/featured/pagecraft.webp",
+    "tech": [
+      "Next.js",
+      "Supabase",
+      "Vercel",
+      "PostHog",
+      "Bun"
+    ],
+    "cta": "https://pagecraft.me/",
+    "description": "A block-based link-in-bio and page builder engineered for speed and flexibility, with a shared block architecture, per-viewport layout control, and a CDN-optimized image pipeline."
+  },
+  {
+    "date": 2,
     "title": "RAF Museum",
     "external": "https://www.rafmuseum.org.uk/",
     "cover": "/images/featured/raf-museum.webp",
@@ -16,7 +31,7 @@
     "description": "A digital overhaul for a national museum, focusing on accessible, component-driven engineering. By implementing a mobile-first, SEO-optimized architecture, the platform delivered a 124% increase in conversions and significantly improved engagement across high-traffic visitor pages."
   },
   {
-    "date": 2,
+    "date": 3,
     "title": "Xbox Interactive Studios",
     "external": "https://v3.xbox-interactive.com/35/modals/live-stream",
     "cover": "/images/featured/xis.webp",
@@ -32,7 +47,7 @@
     "description": "An award-winning retail platform for the Xbox ecosystem, serving millions of users across 20 countries. I helped engineer its high-performance storefront architecture, integrating live-streaming and Azure AI to support 17 languages and 40+ global retailers."
   },
   {
-    "date": 2,
+    "date": 4,
     "title": "Football Foundation",
     "external": "https://footballfoundation.org.uk/",
     "cover": "/images/featured/ff.webp",
