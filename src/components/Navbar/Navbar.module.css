@@ -34,3 +34,9 @@
   cursor: pointer;
   transform: scale(1.1);
 }
+
+@media (max-width: 768px) {
+  .logoImage {
+    height: 52px;
+  }
+}

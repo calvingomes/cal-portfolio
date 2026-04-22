@@ -56,7 +56,6 @@
   display: block;
   position: relative;
   width: 300px;
-  background-color: var(--accent);
   border-radius: var(--border-radius);
   transition: var(--transition);
   box-shadow: 0 10px 30px -15px var(--shadow);
@@ -74,15 +73,9 @@
 
 .img {
   border-radius: var(--border-radius);
-  mix-blend-mode: multiply;
   filter: brightness(90%);
   transition: var(--transition);
   object-fit: cover;
-}
-
-.wrapper:hover .img,
-.wrapper:focus .img {
-  mix-blend-mode: normal;
 }
 
 .wrapper::before,
@@ -100,7 +93,6 @@
   top: 0;
   left: 0;
   background-color: var(--charcoal);
-  mix-blend-mode: screen;
 }
 
 .wrapper::after {

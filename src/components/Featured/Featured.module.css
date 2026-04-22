@@ -193,17 +193,14 @@
   height: 100%;
   inset: 0;
   z-index: 3;
-  background-color: var(--charcoal);
-  mix-blend-mode: screen;
   transition: var(--transition);
 }
 
 .img {
   display: block;
   border-radius: var(--border-radius);
-  mix-blend-mode: multiply;
   object-fit: cover;
-  filter: brightness(50%);
+  filter: saturate(0) brightness(30%);
 }
 
 @media (min-width: 768px) {
